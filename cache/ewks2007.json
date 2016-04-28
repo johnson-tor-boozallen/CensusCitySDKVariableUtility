@@ -1,0 +1,112 @@
+{
+  "variables": {
+    "for": {
+      "label": "Census API FIPS 'for' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-for",
+      "predicateOnly": true
+    },
+    "in": {
+      "label": "Census API FIPS 'in' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-in",
+      "predicateOnly": true
+    },
+    "RCPTOT": {
+      "label": "Value of business done ($1,000)",
+      "concept": "Economic Statistics",
+      "predicateType": "string"
+    },
+    "NAICS_HR": {
+      "label": "2002 NAICS code",
+      "concept": "Economic Statistics",
+      "predicateType": "string"
+    },
+    "NAICS2007": {
+      "label": "2007 NAICS code",
+      "concept": "All sectors",
+      "required": true,
+      "predicateType": "string"
+    },
+    "PAYANN": {
+      "label": "Annual payroll ($1,000)",
+      "concept": "Economic Statistics",
+      "predicateType": "string"
+    },
+    "SECTOR": {
+      "label": "NAICS economic sector code",
+      "concept": "Economic Statistics",
+      "predicateType": "int"
+    },
+    "GEOTYPE": {
+      "label": "Type of geography flag",
+      "concept": "Selectable Geographies",
+      "predicateType": "int"
+    },
+    "YEAR": {
+      "label": "Year",
+      "concept": "Economic Statistics",
+      "predicateType": "int"
+    },
+    "EMP": {
+      "label": "Number of employees",
+      "concept": "Economic Statistics",
+      "predicateType": "string"
+    },
+    "ESTAB": {
+      "label": "Number of establishments",
+      "concept": "Economic Statistics",
+      "predicateType": "string"
+    },
+    "MSA": {
+      "label": "FIPS CMSA MSA code",
+      "concept": "Selectable Geographies",
+      "predicateType": "int"
+    },
+    "EMP_F": {
+      "label": "Number of employees data suppression flag",
+      "concept": "Flag Variables",
+      "predicateType": "string"
+    },
+    "RCPTOT_F": {
+      "label": "Value of business done data suppression flag",
+      "concept": "Flag Variables",
+      "predicateType": "string"
+    },
+    "CONSCITY": {
+      "label": "FIPS consolidated city code",
+      "concept": "Geographic Characteristics",
+      "predicateType": "string"
+    },
+    "PLACE": {
+      "label": "FIPS Place code",
+      "concept": "Selectable Geographies",
+      "predicateType": "int"
+    },
+    "OPTAX": {
+      "label": "Type of operation or tax status code",
+      "concept": "Economic Statistics",
+      "predicateType": "string"
+    },
+    "COUNTY": {
+      "label": "FIPS county code",
+      "concept": "Selectable Geographies",
+      "predicateType": "int"
+    },
+    "ST": {
+      "label": "FIPS state code",
+      "concept": "Selectable Geographies",
+      "predicateType": "int"
+    },
+    "ESTAB_F": {
+      "label": "Number of establishments data suppression flag",
+      "concept": "Flag Variables",
+      "predicateType": "string"
+    },
+    "PAYANN_F": {
+      "label": "Annual payroll data suppression flag",
+      "concept": "Flag Variables",
+      "predicateType": "string"
+    }
+  }
+}

@@ -1,0 +1,4081 @@
+{
+  "variables": {
+    "for": {
+      "label": "Census API FIPS 'for' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-for",
+      "predicateOnly": true
+    },
+    "in": {
+      "label": "Census API FIPS 'in' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-in",
+      "predicateOnly": true
+    },
+    "P0310002": {
+      "label": "Imputation Relationship Nt alloc",
+      "concept": "Population Subjects"
+    },
+    "H0320009": {
+      "label": "Rent $450-499 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0340005": {
+      "label": "Spec Rent-occ HUs Other race HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0340004": {
+      "label": "Spec Rent-occ HUs A/P Isldr HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0340003": {
+      "label": "Spec Rent-occ HUs Amer I/E/A HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0340002": {
+      "label": "Spec Rent-occ HUs Black HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0340001": {
+      "label": "Spec Rent-occ HUs White HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0290004": {
+      "label": "Agg Value Own-occ HUs 3+ unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0320005": {
+      "label": "Rent $250-299 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0290003": {
+      "label": "Agg Value Own-occ HUs 2 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0320006": {
+      "label": "Rent $300-349 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0290002": {
+      "label": "Ag Vle Own-occ HUs 1 atch unit/strct",
+      "concept": "Housing Subjects"
+    },
+    "H0320007": {
+      "label": "Rent $350-399 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0320008": {
+      "label": "Rent $400-449 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0290001": {
+      "label": "Ag Vle Own-occ HUs 1 dtch unit/strct",
+      "concept": "Housing Subjects"
+    },
+    "H0320001": {
+      "label": "Rent '<' $100 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0320002": {
+      "label": "Rent $100-149 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0320003": {
+      "label": "Rent $150-199 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0290006": {
+      "label": "Agg Vle Own-occ HUs Other unit/strct",
+      "concept": "Housing Subjects"
+    },
+    "H0290005": {
+      "label": "Agg Vle Own-occ HUs Mobile hme/trler",
+      "concept": "Housing Subjects"
+    },
+    "H0320004": {
+      "label": "Rent $200-249 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "P0070009": {
+      "label": "Race(25) Asian Indian",
+      "concept": "Population Subjects"
+    },
+    "H0320010": {
+      "label": "Rent $500-549 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0320011": {
+      "label": "Rent $550-599 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "P0070006": {
+      "label": "Race(25) Chinese",
+      "concept": "Population Subjects"
+    },
+    "P0070005": {
+      "label": "Race(25) Aleut",
+      "concept": "Population Subjects"
+    },
+    "P0070008": {
+      "label": "Race(25) Japanese",
+      "concept": "Population Subjects"
+    },
+    "H0320016": {
+      "label": "Rent $1000+ Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0320017": {
+      "label": "Rent-No cash rent Spec Rnt-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "P0070007": {
+      "label": "Race(25) Filipino",
+      "concept": "Population Subjects"
+    },
+    "P0070002": {
+      "label": "Race(25) Black",
+      "concept": "Population Subjects"
+    },
+    "H0320014": {
+      "label": "Rent $700-749 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "P0070001": {
+      "label": "Race(25) White",
+      "concept": "Population Subjects"
+    },
+    "H0320015": {
+      "label": "Rent $750-999 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0320012": {
+      "label": "Rent $600-649 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "P0070004": {
+      "label": "Race(25) Eskimo",
+      "concept": "Population Subjects"
+    },
+    "H0320013": {
+      "label": "Rent $650-699 Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "P0070003": {
+      "label": "Race(25) American Indian",
+      "concept": "Population Subjects"
+    },
+    "H0300001": {
+      "label": "HUs Specified vacant for rent",
+      "concept": "Housing Subjects"
+    },
+    "H0300002": {
+      "label": "HUs Specified vacant for sale only",
+      "concept": "Housing Subjects"
+    },
+    "H0300003": {
+      "label": "HUs All other vacants",
+      "concept": "Housing Subjects"
+    },
+    "CONCITCC": {
+      "label": "Consolidated City Class Code",
+      "concept": "Geographic Traits"
+    },
+    "CONCITCE": {
+      "label": "Consolidated City(Census)",
+      "concept": "Geographic Traits"
+    },
+    "P0310001": {
+      "label": "Imputation Relationship Alloc",
+      "concept": "Population Subjects"
+    },
+    "GEOCOMP": {
+      "label": "Geographic Component",
+      "concept": "Geographic Traits"
+    },
+    "URBANRUR": {
+      "label": "Urban/Rural",
+      "concept": "Geographic Traits"
+    },
+    "H0490001": {
+      "label": "Imputation Units in Structure Alloc",
+      "concept": "Housing Subjects"
+    },
+    "H0490002": {
+      "label": "Imputation Units in Structure Nt alloc",
+      "concept": "Housing Subjects"
+    },
+    "H0520001": {
+      "label": "Imputation Value Subst",
+      "concept": "Housing Subjects"
+    },
+    "P0070014": {
+      "label": "Race(25) Laotian",
+      "concept": "Population Subjects"
+    },
+    "H0520002": {
+      "label": "Imputation Value Nt subst Alloc",
+      "concept": "Housing Subjects"
+    },
+    "P0070015": {
+      "label": "Race(25) Thai",
+      "concept": "Population Subjects"
+    },
+    "P0070012": {
+      "label": "Race(25) Cambodian",
+      "concept": "Population Subjects"
+    },
+    "P0070013": {
+      "label": "Race(25) Hmong",
+      "concept": "Population Subjects"
+    },
+    "P0070018": {
+      "label": "Race(25) Samoan",
+      "concept": "Population Subjects"
+    },
+    "P0070019": {
+      "label": "Race(25) Tongan",
+      "concept": "Population Subjects"
+    },
+    "P0070016": {
+      "label": "Race(25) Other Asian",
+      "concept": "Population Subjects"
+    },
+    "P0070017": {
+      "label": "Race(25) Hawaiian",
+      "concept": "Population Subjects"
+    },
+    "P0070010": {
+      "label": "Race(25) Korean",
+      "concept": "Population Subjects"
+    },
+    "CNTY": {
+      "label": "COUNTY"
+    },
+    "CONCITFP": {
+      "label": "Consolidated City(FIPS)",
+      "concept": "Geographic Traits"
+    },
+    "P0070011": {
+      "label": "Race(25) Vietnamese",
+      "concept": "Population Subjects"
+    },
+    "H0520003": {
+      "label": "Imputation Value Nt subst Nt Alloc",
+      "concept": "Housing Subjects"
+    },
+    "P0070023": {
+      "label": "Race(25) Melanesian",
+      "concept": "Population Subjects"
+    },
+    "P0070024": {
+      "label": "Race(25) Pacific Isldr, n_s_",
+      "concept": "Population Subjects"
+    },
+    "P0070025": {
+      "label": "Race(25) Other race",
+      "concept": "Population Subjects"
+    },
+    "PMSA": {
+      "label": "Primary Metropolitan Statistical Area",
+      "concept": "Geographic Traits"
+    },
+    "P0070020": {
+      "label": "Race(25) Other Polynesian",
+      "concept": "Population Subjects"
+    },
+    "P0070021": {
+      "label": "Race(25) Guamanian",
+      "concept": "Population Subjects"
+    },
+    "P0070022": {
+      "label": "Race(25) Other Micronesian",
+      "concept": "Population Subjects"
+    },
+    "P0120260": {
+      "label": "Other Race Males 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120261": {
+      "label": "Other Race Males 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120262": {
+      "label": "Other Race Males 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "AIANAFP": {
+      "label": "American Indian/Alaska Native Area (FIPS)",
+      "concept": "Geographic Traits"
+    },
+    "CNTYSC": {
+      "label": "County Population Size Code",
+      "concept": "Geographic Traits"
+    },
+    "P0120098": {
+      "label": "Black Females 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120099": {
+      "label": "Black Females 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120257": {
+      "label": "Other Race Males 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0090003": {
+      "label": "Hispanic orig(5) Puerto Rican",
+      "concept": "Population Subjects"
+    },
+    "P0090004": {
+      "label": "Hispanic orig(5) Cuban",
+      "concept": "Population Subjects"
+    },
+    "P0120256": {
+      "label": "Other Race Males 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0090005": {
+      "label": "Hispanic orig(5) Other",
+      "concept": "Population Subjects"
+    },
+    "P0120259": {
+      "label": "Other Race Males 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120258": {
+      "label": "Other Race Males 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0510003": {
+      "label": "Imputation Tenure Nt subst Nt Alloc",
+      "concept": "Housing Subjects"
+    },
+    "P0120253": {
+      "label": "Other Race Males 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0510002": {
+      "label": "Imputation Tenure Nt subst Alloc",
+      "concept": "Housing Subjects"
+    },
+    "P0120252": {
+      "label": "Other Race Males 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120255": {
+      "label": "Other Race Males 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0510001": {
+      "label": "Imputation Tenure Subst",
+      "concept": "Housing Subjects"
+    },
+    "P0090001": {
+      "label": "Hispanic orig(5) No",
+      "concept": "Population Subjects"
+    },
+    "P0090002": {
+      "label": "Hispanic orig(5) Mexican",
+      "concept": "Population Subjects"
+    },
+    "P0120254": {
+      "label": "Other Race Males 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120250": {
+      "label": "Other Race Males 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120251": {
+      "label": "Other Race Males 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120097": {
+      "label": "Black Females 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120096": {
+      "label": "Black Females 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120095": {
+      "label": "Black Females 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120094": {
+      "label": "Black Females '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "P0120093": {
+      "label": "Black Males 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0270010": {
+      "label": "Nonfam HHs 4 persons",
+      "concept": "Population Subjects"
+    },
+    "P0120092": {
+      "label": "Black Males 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0270011": {
+      "label": "Nonfam HHs 5 persons",
+      "concept": "Population Subjects"
+    },
+    "P0270012": {
+      "label": "Nonfam HHs 6 persons",
+      "concept": "Population Subjects"
+    },
+    "URBAREA": {
+      "label": "Urbanized Area",
+      "concept": "Geographic Traits"
+    },
+    "P0120091": {
+      "label": "Black Males 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120090": {
+      "label": "Black Males 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0270013": {
+      "label": "Nonfam HHs 7+ persons",
+      "concept": "Population Subjects"
+    },
+    "P0120089": {
+      "label": "Black Males 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0550001": {
+      "label": "Imputation Meals in Rent Subst",
+      "concept": "Housing Subjects"
+    },
+    "P0120087": {
+      "label": "Black Males 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0550002": {
+      "label": "Imputation Meals in Rent Nt subst Alloc",
+      "concept": "Housing Subjects"
+    },
+    "H0550003": {
+      "label": "Imptn Meals in Rent Nt subst Nt Alloc",
+      "concept": "Housing Subjects"
+    },
+    "P0120088": {
+      "label": "Black Males 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120249": {
+      "label": "Other Race Males '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "P0120248": {
+      "label": "Asian/Pacific Isldr Females 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120247": {
+      "label": "Asian/Pacific Isldr Females 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120246": {
+      "label": "Asian/Pacific Isldr Females 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "CONGDIS": {
+      "label": "Congressional District(101st Congress)",
+      "concept": "Geographic Traits"
+    },
+    "P0120245": {
+      "label": "Asian/Pacific Isldr Females 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120244": {
+      "label": "Asian/Pacific Isldr Females 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120243": {
+      "label": "Asian/Pacific Isldr Females 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120242": {
+      "label": "Asian/Pacific Isldr Females 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120241": {
+      "label": "Asian/Pacific Isldr Females 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0270009": {
+      "label": "Nonfam HHs 3 persons",
+      "concept": "Population Subjects"
+    },
+    "P0270007": {
+      "label": "Nonfam HHs 1 person",
+      "concept": "Population Subjects"
+    },
+    "P0270008": {
+      "label": "Nonfam HHs 2 persons",
+      "concept": "Population Subjects"
+    },
+    "P0120280": {
+      "label": "Other Race Females '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "P0270005": {
+      "label": "Family HHs 6 persons",
+      "concept": "Population Subjects"
+    },
+    "P0120281": {
+      "label": "Other Race Females 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120282": {
+      "label": "Other Race Females 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0270006": {
+      "label": "Family HHs 7+ persons",
+      "concept": "Population Subjects"
+    },
+    "P0120283": {
+      "label": "Other Race Females 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0270003": {
+      "label": "Family HHs 4 persons",
+      "concept": "Population Subjects"
+    },
+    "P0270004": {
+      "label": "Family HHs 5 persons",
+      "concept": "Population Subjects"
+    },
+    "P0120284": {
+      "label": "Other Race Females 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0270001": {
+      "label": "Family HHs 2 persons",
+      "concept": "Population Subjects"
+    },
+    "H0390006": {
+      "label": "Sp Rt-oc HUs HHDR 65+ yrs No cash rt",
+      "concept": "Housing Subjects"
+    },
+    "P0270002": {
+      "label": "Family HHs 3 persons",
+      "concept": "Population Subjects"
+    },
+    "H0390002": {
+      "label": "Sp Rt-oc HUs HHDR '<'65 yrs No mls inc rt",
+      "concept": "Housing Subjects"
+    },
+    "H0390003": {
+      "label": "Sp Rt-oc HUs HHDR '<'65 yrs No cash rt",
+      "concept": "Housing Subjects"
+    },
+    "H0390004": {
+      "label": "Sp Rt-oc HUs HHDR 65+ yrs Mls incld rt",
+      "concept": "Housing Subjects"
+    },
+    "H0390005": {
+      "label": "Sp Rt-oc HUs HHDR 65+ yrs No mls inc rt",
+      "concept": "Housing Subjects"
+    },
+    "H0420001": {
+      "label": "Vacant HUs 1 detached unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0390001": {
+      "label": "Sp Rt-oc HUs HHDR '<'65 yrs Mls incld rt",
+      "concept": "Housing Subjects"
+    },
+    "H0450002": {
+      "label": "HUs Nt subst",
+      "concept": "Housing Subjects"
+    },
+    "H0450001": {
+      "label": "HUs Subst",
+      "concept": "Housing Subjects"
+    },
+    "P0120275": {
+      "label": "Other Race Males 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0420009": {
+      "label": "Vacant HUs Mobil home/trailer",
+      "concept": "Housing Subjects"
+    },
+    "P0120274": {
+      "label": "Other Race Males 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0420008": {
+      "label": "Vacant HUs 50+ unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "P0120277": {
+      "label": "Other Race Males 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0420007": {
+      "label": "Vacant HUs 20-49 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "P0120276": {
+      "label": "Other Race Males 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0420006": {
+      "label": "Vacant HUs 10-19 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0420005": {
+      "label": "Vacant HUs 5-9 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "P0120279": {
+      "label": "Other Race Males 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "H0420004": {
+      "label": "Vacant HUs 3-4 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "P0120278": {
+      "label": "Other Race Males 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0420003": {
+      "label": "Vacant HUs 2 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0420002": {
+      "label": "Vacant HUs 1 attached unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "P0120272": {
+      "label": "Other Race Males 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120273": {
+      "label": "Other Race Males 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120270": {
+      "label": "Other Race Males 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120271": {
+      "label": "Other Race Males 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "SAC10": {
+      "label": "Special Area Code (10)",
+      "concept": "Geographic Traits"
+    },
+    "H0170001": {
+      "label": "Pers in Occupied HUs 1",
+      "concept": "Housing Subjects"
+    },
+    "H0170003": {
+      "label": "Pers in Occupied HUs 3",
+      "concept": "Housing Subjects"
+    },
+    "H0170002": {
+      "label": "Pers in Occupied HUs 2",
+      "concept": "Housing Subjects"
+    },
+    "H0380001": {
+      "label": "Agg Rent Asked:Spec vacant-for-rent HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0170005": {
+      "label": "Pers in Occupied HUs 5",
+      "concept": "Housing Subjects"
+    },
+    "H0170004": {
+      "label": "Pers in Occupied HUs 4",
+      "concept": "Housing Subjects"
+    },
+    "H0170007": {
+      "label": "Pers in Occupied HUs 7+",
+      "concept": "Housing Subjects"
+    },
+    "H0170006": {
+      "label": "Pers in Occupied HUs 6",
+      "concept": "Housing Subjects"
+    },
+    "H0210005": {
+      "label": "Occupd HUs Pers/Room 2_01+",
+      "concept": "Housing Subjects"
+    },
+    "P0120266": {
+      "label": "Other Race Males 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120265": {
+      "label": "Other Race Males 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120264": {
+      "label": "Other Race Males 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120263": {
+      "label": "Other Race Males 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0210001": {
+      "label": "Occupd HUs Pers/Room 0_50 or less",
+      "concept": "Housing Subjects"
+    },
+    "P0120269": {
+      "label": "Other Race Males 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0210002": {
+      "label": "Occupd HUs Pers/Room 0_51-1_00",
+      "concept": "Housing Subjects"
+    },
+    "H0210003": {
+      "label": "Occupd HUs Pers/Room 1_01-1_50",
+      "concept": "Housing Subjects"
+    },
+    "P0120268": {
+      "label": "Other Race Males 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120267": {
+      "label": "Other Race Males 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0210004": {
+      "label": "Occupd HUs Pers/Room 1_51-2_00",
+      "concept": "Housing Subjects"
+    },
+    "P0120061": {
+      "label": "White Females 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120062": {
+      "label": "White Females 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120063": {
+      "label": "Black Males '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "P0120064": {
+      "label": "Black Males 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0230008": {
+      "label": "Pers 65+ Nonfam HH F HHDR not lv alne",
+      "concept": "Population Subjects"
+    },
+    "P0230007": {
+      "label": "Pers 65+ Nonfam HH F HHDR lvng alone",
+      "concept": "Population Subjects"
+    },
+    "P0230009": {
+      "label": "Pers 65+ Nonfam HH Nonrelatives",
+      "concept": "Population Subjects"
+    },
+    "P0120060": {
+      "label": "White Females 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0230004": {
+      "label": "Pers 65+ Family HH Nonrelatives",
+      "concept": "Population Subjects"
+    },
+    "P0230003": {
+      "label": "Pers 65+ Family HH Other relatives",
+      "concept": "Population Subjects"
+    },
+    "P0230006": {
+      "label": "Pers 65+ Nonfam HH M HHDR not lv alne",
+      "concept": "Population Subjects"
+    },
+    "P0230005": {
+      "label": "Pers 65+ Nonfam HH M HHDR lvng alone",
+      "concept": "Population Subjects"
+    },
+    "P0230002": {
+      "label": "Pers 65+ Family HH Spouse",
+      "concept": "Population Subjects"
+    },
+    "P0230001": {
+      "label": "Pers 65+ Family HH Householder",
+      "concept": "Population Subjects"
+    },
+    "P0120212": {
+      "label": "Asian/Pacific Isldr Males 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120213": {
+      "label": "Asian/Pacific Isldr Males 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120214": {
+      "label": "Asian/Pacific Isldr Males 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120215": {
+      "label": "Asian/Pacific Isldr Males 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120210": {
+      "label": "Asian/Pacific Isldr Males 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120211": {
+      "label": "Asian/Pacific Isldr Males 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120059": {
+      "label": "White Females 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120058": {
+      "label": "White Females 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0080001": {
+      "label": "Total Persons Hispanic origin",
+      "concept": "Population Subjects"
+    },
+    "P0120055": {
+      "label": "White Females 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120216": {
+      "label": "Asian/Pacific Isldr Males 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120217": {
+      "label": "Asian/Pacific Isldr Males 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120054": {
+      "label": "White Females 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120218": {
+      "label": "Asian/Pacific Isldr Females '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "P0120057": {
+      "label": "White Females 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120219": {
+      "label": "Asian/Pacific Isldr Females 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120056": {
+      "label": "White Females 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120052": {
+      "label": "White Females 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120053": {
+      "label": "White Females 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120050": {
+      "label": "White Females 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120051": {
+      "label": "White Females 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120203": {
+      "label": "Asian/Pacific Isldr Males 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120204": {
+      "label": "Asian/Pacific Isldr Males 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120201": {
+      "label": "Asian/Pacific Isldr Males 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120202": {
+      "label": "Asian/Pacific Isldr Males 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120200": {
+      "label": "Asian/Pacific Isldr Males 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120049": {
+      "label": "White Females 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120048": {
+      "label": "White Females 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120209": {
+      "label": "Asian/Pacific Isldr Males 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120047": {
+      "label": "White Females 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120207": {
+      "label": "Asian/Pacific Isldr Males 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120046": {
+      "label": "White Females 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120208": {
+      "label": "Asian/Pacific Isldr Males 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120045": {
+      "label": "White Females 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0420010": {
+      "label": "Vacant HUs Other unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "P0120044": {
+      "label": "White Females 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120205": {
+      "label": "Asian/Pacific Isldr Males 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120043": {
+      "label": "White Females 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120206": {
+      "label": "Asian/Pacific Isldr Males 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0180008": {
+      "label": "Fmly HHs 0 '<' 18 yrs Fml, no hsb pres",
+      "concept": "Population Subjects"
+    },
+    "P0120080": {
+      "label": "Black Males 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0180007": {
+      "label": "Fmly HHs 0 '<' 18 yrs Male, no wf pres",
+      "concept": "Population Subjects"
+    },
+    "P0120081": {
+      "label": "Black Males 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0180006": {
+      "label": "Family HHs 0 '<' 18 yrs Married couple",
+      "concept": "Population Subjects"
+    },
+    "P0180005": {
+      "label": "Nonfam HHs 1+ '<' 18 yrs Female HHDR",
+      "concept": "Population Subjects"
+    },
+    "P0120082": {
+      "label": "Black Males 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120083": {
+      "label": "Black Males 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0180004": {
+      "label": "Nonfam HHs 1+ '<' 18 yrs Male HHDR",
+      "concept": "Population Subjects"
+    },
+    "P0180003": {
+      "label": "Fmly HHs 1+ '<' 18 yrs Fml, no hsb pres",
+      "concept": "Population Subjects"
+    },
+    "P0120084": {
+      "label": "Black Males 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0180002": {
+      "label": "Fmly HHs 1+ '<' 18 yrs Male, no wf pres",
+      "concept": "Population Subjects"
+    },
+    "P0120085": {
+      "label": "Black Males 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120086": {
+      "label": "Black Males 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0180001": {
+      "label": "Family HHs 1+ '<' 18 yrs Married couple",
+      "concept": "Population Subjects"
+    },
+    "P0120240": {
+      "label": "Asian/Pacific Isldr Females 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120230": {
+      "label": "Asian/Pacific Isldr Females 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120231": {
+      "label": "Asian/Pacific Isldr Females 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120232": {
+      "label": "Asian/Pacific Isldr Females 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120233": {
+      "label": "Asian/Pacific Isldr Females 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120234": {
+      "label": "Asian/Pacific Isldr Females 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120235": {
+      "label": "Asian/Pacific Isldr Females 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120236": {
+      "label": "Asian/Pacific Isldr Females 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120237": {
+      "label": "Asian/Pacific Isldr Females 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120077": {
+      "label": "Black Males 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120238": {
+      "label": "Asian/Pacific Isldr Females 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120239": {
+      "label": "Asian/Pacific Isldr Females 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120076": {
+      "label": "Black Males 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120079": {
+      "label": "Black Males 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120078": {
+      "label": "Black Males 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0180009": {
+      "label": "Nonfam HHs 0 '<' 18 yrs Male HHDR",
+      "concept": "Population Subjects"
+    },
+    "P0120070": {
+      "label": "Black Males 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120071": {
+      "label": "Black Males 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120074": {
+      "label": "Black Males 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120075": {
+      "label": "Black Males 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120072": {
+      "label": "Black Males 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120073": {
+      "label": "Black Males 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0050001": {
+      "label": "Sex Male",
+      "concept": "Population Subjects"
+    },
+    "P0230011": {
+      "label": "Pers 65+ Others in group quarters",
+      "concept": "Population Subjects"
+    },
+    "P0230010": {
+      "label": "Pers 65+ Institutionalized",
+      "concept": "Population Subjects"
+    },
+    "P0180010": {
+      "label": "Nonfam HHs 0 '<' 18 yrs Female HHDR",
+      "concept": "Population Subjects"
+    },
+    "P0050002": {
+      "label": "Sex Female",
+      "concept": "Population Subjects"
+    },
+    "P0120221": {
+      "label": "Asian/Pacific Isldr Females 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120222": {
+      "label": "Asian/Pacific Isldr Females 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120220": {
+      "label": "Asian/Pacific Isldr Females 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "LOGRECPN": {
+      "label": "Logical Record Part Number",
+      "concept": "Geographic Traits"
+    },
+    "P0120225": {
+      "label": "Asian/Pacific Isldr Females 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120226": {
+      "label": "Asian/Pacific Isldr Females 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120223": {
+      "label": "Asian/Pacific Isldr Females 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120224": {
+      "label": "Asian/Pacific Isldr Females 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120068": {
+      "label": "Black Males 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120229": {
+      "label": "Asian/Pacific Isldr Females 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120067": {
+      "label": "Black Males 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120227": {
+      "label": "Asian/Pacific Isldr Females 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120066": {
+      "label": "Black Males 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120065": {
+      "label": "Black Males 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120228": {
+      "label": "Asian/Pacific Isldr Females 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120069": {
+      "label": "Black Males 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "EXTCITIN": {
+      "label": "Extended City Indicator",
+      "concept": "Geographic Traits"
+    },
+    "P0120120": {
+      "label": "Black Females 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120121": {
+      "label": "Black Females 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120122": {
+      "label": "Black Females 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120123": {
+      "label": "Black Females 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120124": {
+      "label": "Black Females 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120125": {
+      "label": "Amer Ind/Esk/Aleut Males '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "P0120126": {
+      "label": "Amer Ind/Esk/Aleut Males 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120127": {
+      "label": "Amer Ind/Esk/Aleut Males 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120128": {
+      "label": "Amer Ind/Esk/Aleut Males 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120129": {
+      "label": "Amer Ind/Esk/Aleut Males 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0100010": {
+      "label": "Occupied HU Hisp Other race",
+      "concept": "Housing Subjects"
+    },
+    "P0120130": {
+      "label": "Amer Ind/Esk/Aleut Males 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120133": {
+      "label": "Amer Ind/Esk/Aleut Males 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0100001": {
+      "label": "Occupied HU Nt Hisp White",
+      "concept": "Housing Subjects"
+    },
+    "P0120134": {
+      "label": "Amer Ind/Esk/Aleut Males 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0100002": {
+      "label": "Occupied HU Nt Hisp Black",
+      "concept": "Housing Subjects"
+    },
+    "P0120131": {
+      "label": "Amer Ind/Esk/Aleut Males 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0100003": {
+      "label": "Ocpd HU Nt Hisp Amer Ind/Esk/Aleut",
+      "concept": "Housing Subjects"
+    },
+    "P0120132": {
+      "label": "Amer Ind/Esk/Aleut Males 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0100004": {
+      "label": "Ocpd HU Nt Hisp Asian/Pacific Isldr",
+      "concept": "Housing Subjects"
+    },
+    "P0120137": {
+      "label": "Amer Ind/Esk/Aleut Males 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0100005": {
+      "label": "Occupied HU Nt Hisp Other race",
+      "concept": "Housing Subjects"
+    },
+    "P0120138": {
+      "label": "Amer Ind/Esk/Aleut Males 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0100006": {
+      "label": "Occupied HU Hisp White",
+      "concept": "Housing Subjects"
+    },
+    "P0120135": {
+      "label": "Amer Ind/Esk/Aleut Males 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0100007": {
+      "label": "Occupied HU Hisp Black",
+      "concept": "Housing Subjects"
+    },
+    "P0120136": {
+      "label": "Amer Ind/Esk/Aleut Males 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0100008": {
+      "label": "Occupied HU Hisp Amer Ind/Esk/Aleut",
+      "concept": "Housing Subjects"
+    },
+    "H0060001": {
+      "label": "Vacant HU Boarded up",
+      "concept": "Housing Subjects"
+    },
+    "P0120139": {
+      "label": "Amer Ind/Esk/Aleut Males 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "INTPTLAT": {
+      "label": "Internal Point (latitude)",
+      "concept": "Geographic Traits"
+    },
+    "H0060002": {
+      "label": "Vacant HU Nt boarded up",
+      "concept": "Housing Subjects"
+    },
+    "H0100009": {
+      "label": "Occupied HU Hisp Asian/Pacific Isldr",
+      "concept": "Housing Subjects"
+    },
+    "P0120141": {
+      "label": "Amer Ind/Esk/Aleut Males 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120140": {
+      "label": "Amer Ind/Esk/Aleut Males 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0400003": {
+      "label": "Vacant HUs For rent 6+ mos",
+      "concept": "Housing Subjects"
+    },
+    "P0120146": {
+      "label": "Amer Ind/Esk/Aleut Males 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0400002": {
+      "label": "Vacant HUs For rent 2 up-6 mos",
+      "concept": "Housing Subjects"
+    },
+    "P0120147": {
+      "label": "Amer Ind/Esk/Aleut Males 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0400001": {
+      "label": "Vacant HUs For rent '<' 2 mos",
+      "concept": "Housing Subjects"
+    },
+    "P0120148": {
+      "label": "Amer Ind/Esk/Aleut Males 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0090001": {
+      "label": "Own-occ HU White",
+      "concept": "Housing Subjects"
+    },
+    "P0120149": {
+      "label": "Amer Ind/Esk/Aleut Males 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0090002": {
+      "label": "Own-occ HU Black",
+      "concept": "Housing Subjects"
+    },
+    "H0090003": {
+      "label": "Own-occ HU Amer Ind/Esk/Aleut",
+      "concept": "Housing Subjects"
+    },
+    "P0120142": {
+      "label": "Amer Ind/Esk/Aleut Males 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0090004": {
+      "label": "Own-occ HU Asian/Pacific Isldr",
+      "concept": "Housing Subjects"
+    },
+    "P0120143": {
+      "label": "Amer Ind/Esk/Aleut Males 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0090005": {
+      "label": "Own-occ HU Other race",
+      "concept": "Housing Subjects"
+    },
+    "P0120144": {
+      "label": "Amer Ind/Esk/Aleut Males 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120145": {
+      "label": "Amer Ind/Esk/Aleut Males 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0090006": {
+      "label": "Rent-occ HU White",
+      "concept": "Housing Subjects"
+    },
+    "H0400007": {
+      "label": "Vacant HUs All others '<' 2 mos",
+      "concept": "Housing Subjects"
+    },
+    "H0400006": {
+      "label": "Vacant HUs For sale 6+ mos",
+      "concept": "Housing Subjects"
+    },
+    "H0400005": {
+      "label": "Vacant HUs For sale 2 up-6 mos",
+      "concept": "Housing Subjects"
+    },
+    "H0400004": {
+      "label": "Vacant HUs For sale '<' 2 mos",
+      "concept": "Housing Subjects"
+    },
+    "P0140004": {
+      "label": "Males Widowed",
+      "concept": "Population Subjects"
+    },
+    "P0170001": {
+      "label": "Persons in families",
+      "concept": "Population Subjects"
+    },
+    "P0140003": {
+      "label": "Males Separated",
+      "concept": "Population Subjects"
+    },
+    "P0140002": {
+      "label": "Males Now married, exc separated",
+      "concept": "Population Subjects"
+    },
+    "P0140001": {
+      "label": "Males Never married",
+      "concept": "Population Subjects"
+    },
+    "P0120150": {
+      "label": "Amer Ind/Esk/Aleut Males 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120152": {
+      "label": "Amer Ind/Esk/Aleut Males 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120151": {
+      "label": "Amer Ind/Esk/Aleut Males 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0140009": {
+      "label": "Females Widowed",
+      "concept": "Population Subjects"
+    },
+    "P0140008": {
+      "label": "Females Separated",
+      "concept": "Population Subjects"
+    },
+    "P0140007": {
+      "label": "Females Now married, exc separated",
+      "concept": "Population Subjects"
+    },
+    "P0140006": {
+      "label": "Females Never married",
+      "concept": "Population Subjects"
+    },
+    "P0140005": {
+      "label": "Males Divorced",
+      "concept": "Population Subjects"
+    },
+    "P0120159": {
+      "label": "Amer Ind/Esk/Aleut Females 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120157": {
+      "label": "Amer Ind/Esk/Aleut Females 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120158": {
+      "label": "Amer Ind/Esk/Aleut Females 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120155": {
+      "label": "Amer Ind/Esk/Aleut Males 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120156": {
+      "label": "Amer Ind/Esk/Aleut Females '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "P0120153": {
+      "label": "Amer Ind/Esk/Aleut Males 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120154": {
+      "label": "Amer Ind/Esk/Aleut Males 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0140001": {
+      "label": "Total HUs:Aggregate Rooms",
+      "concept": "Housing Subjects"
+    },
+    "P0140010": {
+      "label": "Females Divorced",
+      "concept": "Population Subjects"
+    },
+    "P0120163": {
+      "label": "Amer Ind/Esk/Aleut Females 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120162": {
+      "label": "Amer Ind/Esk/Aleut Females 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120161": {
+      "label": "Amer Ind/Esk/Aleut Females 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "CONCITSC": {
+      "label": "Consolidated City Population Size Code",
+      "concept": "Geographic Traits"
+    },
+    "P0120160": {
+      "label": "Amer Ind/Esk/Aleut Females 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "FILEID": {
+      "label": "File Identification(1)",
+      "concept": "Geographic Traits"
+    },
+    "P0120164": {
+      "label": "Amer Ind/Esk/Aleut Females 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "AIANACE": {
+      "label": "American Indian/Alaska Native Area (Census)",
+      "concept": "Geographic Traits"
+    },
+    "P0120165": {
+      "label": "Amer Ind/Esk/Aleut Females 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120166": {
+      "label": "Amer Ind/Esk/Aleut Females 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "AIANACC": {
+      "label": "American Indian/Alaska Native Area Class Code",
+      "concept": "Geographic Traits"
+    },
+    "P0120167": {
+      "label": "Amer Ind/Esk/Aleut Females 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120168": {
+      "label": "Amer Ind/Esk/Aleut Females 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120169": {
+      "label": "Amer Ind/Esk/Aleut Females 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0340002": {
+      "label": "Imputation Race Nt alloc",
+      "concept": "Population Subjects"
+    },
+    "P0340001": {
+      "label": "Imputation Race Alloc",
+      "concept": "Population Subjects"
+    },
+    "PLACEFP": {
+      "label": "PLACEFP",
+      "concept": "Geographic Summary Level"
+    },
+    "P0120170": {
+      "label": "Amer Ind/Esk/Aleut Females 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120172": {
+      "label": "Amer Ind/Esk/Aleut Females 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120171": {
+      "label": "Amer Ind/Esk/Aleut Females 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "GCUNI": {
+      "label": "Geographic Change User Note Indicator",
+      "concept": "Geographic Traits"
+    },
+    "P0120174": {
+      "label": "Amer Ind/Esk/Aleut Females 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120173": {
+      "label": "Amer Ind/Esk/Aleut Females 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120177": {
+      "label": "Amer Ind/Esk/Aleut Females 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120178": {
+      "label": "Amer Ind/Esk/Aleut Females 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120175": {
+      "label": "Amer Ind/Esk/Aleut Females 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120176": {
+      "label": "Amer Ind/Esk/Aleut Females 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120179": {
+      "label": "Amer Ind/Esk/Aleut Females 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120181": {
+      "label": "Amer Ind/Esk/Aleut Females 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120180": {
+      "label": "Amer Ind/Esk/Aleut Females 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120185": {
+      "label": "Amer Ind/Esk/Aleut Females 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120184": {
+      "label": "Amer Ind/Esk/Aleut Females 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120183": {
+      "label": "Amer Ind/Esk/Aleut Females 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120182": {
+      "label": "Amer Ind/Esk/Aleut Females 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0370001": {
+      "label": "Spec Rent-occ HUs Agg Rent Nt Hisp HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0370002": {
+      "label": "Spec Rent-occ HUs Agg Rent Hisp HHDR",
+      "concept": "Housing Subjects"
+    },
+    "P0020001": {
+      "label": "Total Families",
+      "concept": "Population Subjects"
+    },
+    "P0120107": {
+      "label": "Black Females 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120186": {
+      "label": "Amer Ind/Esk/Aleut Females 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120106": {
+      "label": "Black Females 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120187": {
+      "label": "Asian/Pacific Isldr Males '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "P0120109": {
+      "label": "Black Females 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120188": {
+      "label": "Asian/Pacific Isldr Males 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120108": {
+      "label": "Black Females 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120189": {
+      "label": "Asian/Pacific Isldr Males 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120103": {
+      "label": "Black Females 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120102": {
+      "label": "Black Females 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "PLACEDC": {
+      "label": "Place Description Code",
+      "concept": "Geographic Traits"
+    },
+    "P0120105": {
+      "label": "Black Females 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120104": {
+      "label": "Black Females 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120101": {
+      "label": "Black Females 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120100": {
+      "label": "Black Females 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0010001": {
+      "label": "Total Persons",
+      "concept": "Population Subjects"
+    },
+    "P0120194": {
+      "label": "Asian/Pacific Isldr Males 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120193": {
+      "label": "Asian/Pacific Isldr Males 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120196": {
+      "label": "Asian/Pacific Isldr Males 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120195": {
+      "label": "Asian/Pacific Isldr Males 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120190": {
+      "label": "Asian/Pacific Isldr Males 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120192": {
+      "label": "Asian/Pacific Isldr Males 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120191": {
+      "label": "Asian/Pacific Isldr Males 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "P017A001": {
+      "label": "Persons per family",
+      "concept": "Population Subjects"
+    },
+    "P0120199": {
+      "label": "Asian/Pacific Isldr Males 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120119": {
+      "label": "Black Females 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120118": {
+      "label": "Black Females 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120197": {
+      "label": "Asian/Pacific Isldr Males 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120198": {
+      "label": "Asian/Pacific Isldr Males 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120117": {
+      "label": "Black Females 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "PLACECE": {
+      "label": "Place (Census)",
+      "concept": "Geographic Traits"
+    },
+    "P0120116": {
+      "label": "Black Females 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "PLACECC": {
+      "label": "Place Class Code",
+      "concept": "Geographic Traits"
+    },
+    "P0120115": {
+      "label": "Black Females 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120114": {
+      "label": "Black Females 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120113": {
+      "label": "Black Females 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120112": {
+      "label": "Black Females 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120111": {
+      "label": "Black Females 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120110": {
+      "label": "Black Females 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0200001": {
+      "label": "Agg Persons Owner-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0500001": {
+      "label": "Imputation Rooms Alloc",
+      "concept": "Housing Subjects"
+    },
+    "H0500002": {
+      "label": "Imputation Rooms Nt alloc",
+      "concept": "Housing Subjects"
+    },
+    "H0200002": {
+      "label": "Agg Persons Renter-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0530003": {
+      "label": "Imputation Prce Ask Nt sbst Nt Alloc",
+      "concept": "Housing Subjects"
+    },
+    "H0530002": {
+      "label": "Imputation Price Asked Nt subst Alloc",
+      "concept": "Housing Subjects"
+    },
+    "H0030001": {
+      "label": "Owner occupied HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0530001": {
+      "label": "Imputation Price Asked Subst",
+      "concept": "Housing Subjects"
+    },
+    "H0030002": {
+      "label": "Renter occupied HUs",
+      "concept": "Housing Subjects"
+    },
+    "STATEFP": {
+      "label": "STATEFP",
+      "concept": "Geographic Summary Level"
+    },
+    "PARTREC": {
+      "label": "Total Number of Parts in Record",
+      "concept": "Geographic Traits"
+    },
+    "P0280010": {
+      "label": "Pers Othr Grp Qrtrs Other",
+      "concept": "Population Subjects"
+    },
+    "H0180008": {
+      "label": "Rent-occ HUs 1 person",
+      "concept": "Housing Subjects"
+    },
+    "P0280002": {
+      "label": "Pers Institutionalized Nursing homes",
+      "concept": "Population Subjects"
+    },
+    "BLCKGR": {
+      "label": "BLOCK GROUP"
+    },
+    "P0280003": {
+      "label": "Pers Institutionalized Mental",
+      "concept": "Population Subjects"
+    },
+    "H0180007": {
+      "label": "Own-occ HUs 7+ persons",
+      "concept": "Housing Subjects"
+    },
+    "P0280004": {
+      "label": "Pers Institutionalized Juvenile",
+      "concept": "Population Subjects"
+    },
+    "H0180006": {
+      "label": "Own-occ HUs 6 persons",
+      "concept": "Housing Subjects"
+    },
+    "P0280005": {
+      "label": "Pers Institutionalized Other",
+      "concept": "Population Subjects"
+    },
+    "H0180005": {
+      "label": "Own-occ HUs 5 persons",
+      "concept": "Housing Subjects"
+    },
+    "P0280006": {
+      "label": "Pers Othr Grp Qrtrs College dorms",
+      "concept": "Population Subjects"
+    },
+    "H0180004": {
+      "label": "Own-occ HUs 4 persons",
+      "concept": "Housing Subjects"
+    },
+    "H0480002": {
+      "label": "Imputation Dur Vacancy Nt subst Alloc",
+      "concept": "Housing Subjects"
+    },
+    "H0480003": {
+      "label": "Imputation Dur Vcncy Nt subst Nt Alloc",
+      "concept": "Housing Subjects"
+    },
+    "H0180003": {
+      "label": "Own-occ HUs 3 persons",
+      "concept": "Housing Subjects"
+    },
+    "P0280007": {
+      "label": "Pers Othr Grp Qrtrs Military qrtrs",
+      "concept": "Population Subjects"
+    },
+    "H0180002": {
+      "label": "Own-occ HUs 2 persons",
+      "concept": "Housing Subjects"
+    },
+    "P0280008": {
+      "label": "Pers Othr Grp Qrtrs Hmeless shelters",
+      "concept": "Population Subjects"
+    },
+    "H0180001": {
+      "label": "Own-occ HUs 1 person",
+      "concept": "Housing Subjects"
+    },
+    "P0280009": {
+      "label": "Pers Othr Grp Qrtrs Visible st locns",
+      "concept": "Population Subjects"
+    },
+    "H0480001": {
+      "label": "Imputation Dur Vacancy Subst",
+      "concept": "Housing Subjects"
+    },
+    "SAC1": {
+      "label": "Special Area Code (1)",
+      "concept": "Geographic Traits"
+    },
+    "P0200007": {
+      "label": "Hispanic Nonfam HHDR living alone",
+      "concept": "Population Subjects"
+    },
+    "SAC2": {
+      "label": "Special Area Code (2)",
+      "concept": "Geographic Traits"
+    },
+    "P0200006": {
+      "label": "Hispanic Female HHDR, no hb no rel ch",
+      "concept": "Population Subjects"
+    },
+    "SAC3": {
+      "label": "Special Area Code (3)",
+      "concept": "Geographic Traits"
+    },
+    "P0200008": {
+      "label": "Hispanic Nonfam HHDR not living alone",
+      "concept": "Population Subjects"
+    },
+    "SAC4": {
+      "label": "Special Area Code (4)",
+      "concept": "Geographic Traits"
+    },
+    "P0200003": {
+      "label": "Hispanic Male HHDR, no wf w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0200002": {
+      "label": "Hispanic Married couple no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0200005": {
+      "label": "Hispanic Female HHDR, no hb w/ rel ch",
+      "concept": "Population Subjects"
+    },
+    "H0180009": {
+      "label": "Rent-occ HUs 2 persons",
+      "concept": "Housing Subjects"
+    },
+    "P0280001": {
+      "label": "Pers Institutionalized Correctional",
+      "concept": "Population Subjects"
+    },
+    "P0200004": {
+      "label": "Hispanic Male HHDR, no wf no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0160001": {
+      "label": "1 person HH Male householder",
+      "concept": "Population Subjects"
+    },
+    "P0160002": {
+      "label": "1 person HH Female householder",
+      "concept": "Population Subjects"
+    },
+    "H0270001": {
+      "label": "Spec Own-occ HUs Nt Hisp orig HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0270002": {
+      "label": "Spec Own-occ HUs Hisp orig HHDR",
+      "concept": "Housing Subjects"
+    },
+    "P0160009": {
+      "label": "2+ Nonfam HH Male HHDR",
+      "concept": "Population Subjects"
+    },
+    "ANPSADPI": {
+      "label": "Area Name/PSAD Term/Part Indicator 14",
+      "concept": "Geographic Traits"
+    },
+    "P0160007": {
+      "label": "2+ Fmly HH Fmle, no hbd pres w/ rel chld",
+      "concept": "Population Subjects"
+    },
+    "P0160008": {
+      "label": "2+ Fmly HH Fmle, no hbd pres no rel chld",
+      "concept": "Population Subjects"
+    },
+    "P0160005": {
+      "label": "2+ Fmly HH Male, no wfe pres w/ rel chld",
+      "concept": "Population Subjects"
+    },
+    "P0160006": {
+      "label": "2+ Fmly HH Male, no wfe pres no rel chld",
+      "concept": "Population Subjects"
+    },
+    "P0160003": {
+      "label": "2+ Family HH Married couple w/ rel child",
+      "concept": "Population Subjects"
+    },
+    "P0160004": {
+      "label": "2+ Family HH Married cple w/ no rel chld",
+      "concept": "Population Subjects"
+    },
+    "STATECE": {
+      "label": "State (Census)",
+      "concept": "Geographic Traits"
+    },
+    "FUNCSTAT": {
+      "label": "Functional Status Code",
+      "concept": "Geographic Traits"
+    },
+    "H0180013": {
+      "label": "Rent-occ HUs 6 persons",
+      "concept": "Housing Subjects"
+    },
+    "H0180012": {
+      "label": "Rent-occ HUs 5 persons",
+      "concept": "Housing Subjects"
+    },
+    "H0180014": {
+      "label": "Rent-occ HUs 7+ persons",
+      "concept": "Housing Subjects"
+    },
+    "P0160010": {
+      "label": "2+ Nonfam HH Female HHDR",
+      "concept": "Population Subjects"
+    },
+    "P0200001": {
+      "label": "Hispanic Married couple w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "H0460001": {
+      "label": "Imp Husng Itms HUs nt sub No itms alloc",
+      "concept": "Housing Subjects"
+    },
+    "SAC9": {
+      "label": "Special Area Code (9)",
+      "concept": "Geographic Traits"
+    },
+    "SAC8": {
+      "label": "Special Area Code (8)",
+      "concept": "Geographic Traits"
+    },
+    "SAC7": {
+      "label": "Special Area Code (7)",
+      "concept": "Geographic Traits"
+    },
+    "H0460002": {
+      "label": "Imp Husng Itms HUs nt sub 1+ itms alloc",
+      "concept": "Housing Subjects"
+    },
+    "SAC6": {
+      "label": "Special Area Code (6)",
+      "concept": "Geographic Traits"
+    },
+    "SAC5": {
+      "label": "Special Area Code (5)",
+      "concept": "Geographic Traits"
+    },
+    "H0180010": {
+      "label": "Rent-occ HUs 3 persons",
+      "concept": "Housing Subjects"
+    },
+    "H0180011": {
+      "label": "Rent-occ HUs 4 persons",
+      "concept": "Housing Subjects"
+    },
+    "P0100004": {
+      "label": "Not Hispanic orig(10) Asian/Pcfc Isldr",
+      "concept": "Population Subjects"
+    },
+    "P0100003": {
+      "label": "Not Hispanic orig(10) Amer Ind/Esk/Aleut",
+      "concept": "Population Subjects"
+    },
+    "P0100002": {
+      "label": "Not Hispanic orig(10) Black",
+      "concept": "Population Subjects"
+    },
+    "P0100001": {
+      "label": "Not Hispanic orig(10) White",
+      "concept": "Population Subjects"
+    },
+    "P0100006": {
+      "label": "Hispanic orig(10) White",
+      "concept": "Population Subjects"
+    },
+    "P0100005": {
+      "label": "Not Hispanic orig(10) Other",
+      "concept": "Population Subjects"
+    },
+    "P0300002": {
+      "label": "Imputation Pop Items 1+ items alloc",
+      "concept": "Population Subjects"
+    },
+    "P0300001": {
+      "label": "Imputation Pop Items No items alloc",
+      "concept": "Population Subjects"
+    },
+    "P0260002": {
+      "label": "Households w/ no nonrelatives",
+      "concept": "Population Subjects"
+    },
+    "P0260001": {
+      "label": "Households w/ 1+ nonrelatives",
+      "concept": "Population Subjects"
+    },
+    "H0070001": {
+      "label": "HU Vacant Usual home elsewhere",
+      "concept": "Housing Subjects"
+    },
+    "H0070002": {
+      "label": "HU Vcnt Other than usl home elsehwere",
+      "concept": "Housing Subjects"
+    },
+    "P0240003": {
+      "label": "2+ pers Nonfam HHs 1+ pers 60+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0240002": {
+      "label": "2+ pers Family HHs 1+ pers 60+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0240004": {
+      "label": "1 pers HHs no pers 60+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0240001": {
+      "label": "1 pers HHs 1+ pers 60+ yrs",
+      "concept": "Population Subjects"
+    },
+    "H0160002": {
+      "label": "Vacant HUs For sale only Agg Rms",
+      "concept": "Housing Subjects"
+    },
+    "H0160001": {
+      "label": "Vacant HUs For rent Agg Rms",
+      "concept": "Housing Subjects"
+    },
+    "BLCK": {
+      "label": "Block",
+      "concept": "Geographic Traits"
+    },
+    "COUSUBCE": {
+      "label": "County Subdivision (Census)",
+      "concept": "Geographic Traits"
+    },
+    "H0160005": {
+      "label": "Vacant HUs For migrant workers Ag Rms",
+      "concept": "Housing Subjects"
+    },
+    "H0160006": {
+      "label": "Vacant HUs Other vacant Agg Rms",
+      "concept": "Housing Subjects"
+    },
+    "H0160003": {
+      "label": "Vcnt HUs Rnt or sld, not ocpd Agg Rms",
+      "concept": "Housing Subjects"
+    },
+    "H0160004": {
+      "label": "Vcnt HUs Season/rcrt/ocsnl use Ag Rms",
+      "concept": "Housing Subjects"
+    },
+    "COUSUBCC": {
+      "label": "County Subdivision Class Code",
+      "concept": "Geographic Traits"
+    },
+    "P0120310": {
+      "label": "Other Race Females 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "H0040004": {
+      "label": "HUs Nt defined for file",
+      "concept": "Housing Subjects"
+    },
+    "P0190040": {
+      "label": "Other race HHDR Nonfam not lv alone",
+      "concept": "Population Subjects"
+    },
+    "H0040001": {
+      "label": "HUs Urban Inside urbanized area",
+      "concept": "Housing Subjects"
+    },
+    "H0040003": {
+      "label": "HUs Rural",
+      "concept": "Housing Subjects"
+    },
+    "H0040002": {
+      "label": "HUs Urban Outside urbanized area",
+      "concept": "Housing Subjects"
+    },
+    "P0120301": {
+      "label": "Other Race Females 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120300": {
+      "label": "Other Race Females 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120303": {
+      "label": "Other Race Females 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120302": {
+      "label": "Other Race Females 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120305": {
+      "label": "Other Race Females 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120304": {
+      "label": "Other Race Females 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120307": {
+      "label": "Other Race Females 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120306": {
+      "label": "Other Race Females 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120309": {
+      "label": "Other Race Females 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120308": {
+      "label": "Other Race Females 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "ANRC": {
+      "label": "Alaska Native Regional Corporation",
+      "concept": "Geographic Traits"
+    },
+    "H0350001": {
+      "label": "Spec Rent-occ HUs Agg Rent White HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0350004": {
+      "label": "Sp Rnt-occ HUs Ag Rnt A/P Isldr HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0350005": {
+      "label": "Sp Rnt-occ HUs Ag Rnt Other race HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0350002": {
+      "label": "Spec Rent-occ HUs Agg Rent Black HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0350003": {
+      "label": "Sp Rnt-occ HUs Ag Rnt Amer I/E/A HHDR",
+      "concept": "Housing Subjects"
+    },
+    "P0210001": {
+      "label": "Pers '<' 18 Yrs Householder or spouse",
+      "concept": "Population Subjects"
+    },
+    "P0210002": {
+      "label": "Pers '<' 18 Yrs Married couple Own chl",
+      "concept": "Population Subjects"
+    },
+    "P0210003": {
+      "label": "Pers '<' 18 Yrs Male HHDR-no wf Own chl",
+      "concept": "Population Subjects"
+    },
+    "P0210004": {
+      "label": "Pers '<' 18 Yrs Fmle HHDR-no hb Own chl",
+      "concept": "Population Subjects"
+    },
+    "P0210005": {
+      "label": "Pers '<' 18 Yrs Other relatives",
+      "concept": "Population Subjects"
+    },
+    "P0210006": {
+      "label": "Pers '<' 18 Yrs Nonrelatives",
+      "concept": "Population Subjects"
+    },
+    "P0210007": {
+      "label": "Pers '<' 18 Yrs Institutionalized",
+      "concept": "Population Subjects"
+    },
+    "P0210008": {
+      "label": "Pers '<' 18 Yrs Other grp quarters",
+      "concept": "Population Subjects"
+    },
+    "PLACESC": {
+      "label": "Place Population Size Code",
+      "concept": "Geographic Traits"
+    },
+    "MSACMSA": {
+      "label": "MSACMSA",
+      "concept": "Geographic Summary Level"
+    },
+    "P0150011": {
+      "label": "Persons Institutionalized",
+      "concept": "Population Subjects"
+    },
+    "P0150012": {
+      "label": "Persons in Othr Group quarters",
+      "concept": "Population Subjects"
+    },
+    "P0150010": {
+      "label": "Persons in Nonfam HHs Nonrelatives",
+      "concept": "Population Subjects"
+    },
+    "P0190003": {
+      "label": "White HHDR Male, no wife w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190002": {
+      "label": "White HHDR Married couple no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190001": {
+      "label": "White HHDR Married couple w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190007": {
+      "label": "White HHDR Nonfam living alone",
+      "concept": "Population Subjects"
+    },
+    "P0190006": {
+      "label": "White HHDR Female, no hsb no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190005": {
+      "label": "White HHDR Female, no hsb w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190004": {
+      "label": "White HHDR Male, no wife no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190008": {
+      "label": "White HHDR Nonfam not living alone",
+      "concept": "Population Subjects"
+    },
+    "P0190009": {
+      "label": "Black HHDR Married cple w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "CMSA": {
+      "label": "Consolidated Metropolitan Statistical Area",
+      "concept": "Geographic Traits"
+    },
+    "P0150001": {
+      "label": "Persons in Family HHs Householder",
+      "concept": "Population Subjects"
+    },
+    "P0150002": {
+      "label": "Persons in Family HHs Spouse",
+      "concept": "Population Subjects"
+    },
+    "P0150003": {
+      "label": "Persons in Family HHs Child Ntrl/adpt",
+      "concept": "Population Subjects"
+    },
+    "P0190010": {
+      "label": "Black HHDR Married cple no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190012": {
+      "label": "Black HHDR Male, no wf no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0150008": {
+      "label": "Persons in Nonfam HHs HHDR live alone",
+      "concept": "Population Subjects"
+    },
+    "P0150009": {
+      "label": "Persons in Nonfam HHs not live alone",
+      "concept": "Population Subjects"
+    },
+    "P0190011": {
+      "label": "Black HHDR Male, no wf w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190014": {
+      "label": "Black HHDR Fml, no hsb no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190013": {
+      "label": "Black HHDR Fml, no hsb w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190016": {
+      "label": "Black HHDR Nonfam not living alone",
+      "concept": "Population Subjects"
+    },
+    "P0150004": {
+      "label": "Persons in Family HHs Child Step",
+      "concept": "Population Subjects"
+    },
+    "P0150005": {
+      "label": "Persons in Family HHs Grandchild",
+      "concept": "Population Subjects"
+    },
+    "P0190015": {
+      "label": "Black HHDR Nonfam living alone",
+      "concept": "Population Subjects"
+    },
+    "P0190018": {
+      "label": "Ind/Esk/Aleut HHDR Md cpl no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0150006": {
+      "label": "Persons in Family HHs Other relatives",
+      "concept": "Population Subjects"
+    },
+    "P0150007": {
+      "label": "Persons in Family HHs Nonrelatives",
+      "concept": "Population Subjects"
+    },
+    "P0190017": {
+      "label": "Ind/Esk/Aleut HHDR Md cpl w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190019": {
+      "label": "Ind/Esk/Aleut HHDR M no wf w/rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190021": {
+      "label": "Ind/Esk/Aleut HHDR F no hb w rel chl",
+      "concept": "Population Subjects"
+    },
+    "H0110002": {
+      "label": "Own-occ HU Hisp Black",
+      "concept": "Housing Subjects"
+    },
+    "P0190020": {
+      "label": "Ind/Esk/Aleut HHDR M no wf no rl chl",
+      "concept": "Population Subjects"
+    },
+    "H0110003": {
+      "label": "Own-occ HU Hisp Amer Ind/Esk/Aleut",
+      "concept": "Housing Subjects"
+    },
+    "H0110001": {
+      "label": "Own-occ HU Hisp White",
+      "concept": "Housing Subjects"
+    },
+    "H0110006": {
+      "label": "Rent-occ HU Hisp White",
+      "concept": "Housing Subjects"
+    },
+    "H0110007": {
+      "label": "Rent-occ HU Hisp Black",
+      "concept": "Housing Subjects"
+    },
+    "H0110004": {
+      "label": "Own-occ HU Hisp Asian/Pacific Isldr",
+      "concept": "Housing Subjects"
+    },
+    "STUSAB": {
+      "label": "State/US Abbreviation",
+      "concept": "Geographic Traits"
+    },
+    "H0110005": {
+      "label": "Own-occ HU Hisp Other race",
+      "concept": "Housing Subjects"
+    },
+    "H02200010": {
+      "label": "Own-occ HUs Pers/Rm 0_50 or less",
+      "concept": "Housing Subjects"
+    },
+    "P0190029": {
+      "label": "Asian/Pacific HHDR F no hb w/ rel ch",
+      "concept": "Population Subjects"
+    },
+    "P0190028": {
+      "label": "Asian/Pacific HHDR M no wf no rel ch",
+      "concept": "Population Subjects"
+    },
+    "P0190027": {
+      "label": "Asian/Pacific HHDR M no wf w/ rel ch",
+      "concept": "Population Subjects"
+    },
+    "P0190026": {
+      "label": "Asian/Pacific HHDR Md cpl no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190025": {
+      "label": "Asian/Pacific HHDR Md cpl w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190024": {
+      "label": "Ind/Esk/Aleut HHDR Nonfam n lv alone",
+      "concept": "Population Subjects"
+    },
+    "P0190023": {
+      "label": "Ind/Esk/Aleut HHDR Nonfam lvng alone",
+      "concept": "Population Subjects"
+    },
+    "P0190022": {
+      "label": "Ind/Esk/Aleut HHDR F no hb no rl chl",
+      "concept": "Population Subjects"
+    },
+    "H0430020": {
+      "label": "Rent-occ HUs Other unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "INTPTLNG": {
+      "label": "Internal Point (longitude)",
+      "concept": "Geographic Traits"
+    },
+    "INTUC": {
+      "label": "Internal Use Code",
+      "concept": "Geographic Traits"
+    },
+    "H0110009": {
+      "label": "Rent-occ HU Hisp Asian/Pacific Isldr",
+      "concept": "Housing Subjects"
+    },
+    "H0110008": {
+      "label": "Rent-occ HU Hisp Amer Ind/Esk/Aleut",
+      "concept": "Housing Subjects"
+    },
+    "P0190030": {
+      "label": "Asian/Pacific HHDR F no hb no rel ch",
+      "concept": "Population Subjects"
+    },
+    "P0190032": {
+      "label": "Asian/Pacific HHDR Nonfam n lv alone",
+      "concept": "Population Subjects"
+    },
+    "P0190031": {
+      "label": "Asian/Pacific HHDR Nonfam lvng alone",
+      "concept": "Population Subjects"
+    },
+    "H0410010": {
+      "label": "HUs Other unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "HU100": {
+      "label": "Housing Unit Count (100%)",
+      "concept": "Geographic Traits"
+    },
+    "P0190038": {
+      "label": "Other race HHDR F no husb no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190037": {
+      "label": "Other race HHDR F no husb w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "H0260005": {
+      "label": "Sp Own-occ HUs Ag Vle Other race HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0260004": {
+      "label": "Sp Own-occ HUs Ag Vle A/P Isldr HHDR",
+      "concept": "Housing Subjects"
+    },
+    "P0190039": {
+      "label": "Other race HHDR Nonfam living alone",
+      "concept": "Population Subjects"
+    },
+    "P0190034": {
+      "label": "Other race HHDR Md cpl no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190033": {
+      "label": "Other race HHDR Md cpl w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "H0360002": {
+      "label": "Spec Rent-occ HUs Hisp HHDR",
+      "concept": "Housing Subjects"
+    },
+    "P0190036": {
+      "label": "Other race HHDR M no wife no rel chl",
+      "concept": "Population Subjects"
+    },
+    "P0190035": {
+      "label": "Other race HHDR M no wife w/ rel chl",
+      "concept": "Population Subjects"
+    },
+    "H0360001": {
+      "label": "Spec Rent-occ HUs Nt Hisp HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0110010": {
+      "label": "Rent-occ HU Hisp Other race",
+      "concept": "Housing Subjects"
+    },
+    "H0430010": {
+      "label": "Own-occ HUs Other unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0430011": {
+      "label": "Rent-occ HUs 1 detached unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0260002": {
+      "label": "Spec Own-occ HUs Agg Value Black HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0260003": {
+      "label": "Sp Own-occ HUs Ag Vle Amer I/E/A HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0260001": {
+      "label": "Spe Own-occ HUs Agg Value White HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0430016": {
+      "label": "Rent-occ HUs 10-19 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0430017": {
+      "label": "Rent-occ HUs 20-49 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0430018": {
+      "label": "Rent-occ HUs 50+ unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0430019": {
+      "label": "Rent-occ HUs Mobil home/trailer",
+      "concept": "Housing Subjects"
+    },
+    "H0430012": {
+      "label": "Rent-occ HUs 1 attached unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "MSACMSAS": {
+      "label": "MSA/CMSA Population Size Code",
+      "concept": "Geographic Traits"
+    },
+    "H0430013": {
+      "label": "Rent-occ HUs 2 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0430014": {
+      "label": "Rent-occ HUs 3-4 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0430015": {
+      "label": "Rent-occ HUs 5-9 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "P0110020": {
+      "label": "Persons Age 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110021": {
+      "label": "Persons Age 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130008": {
+      "label": "Hispanic orig Males 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130009": {
+      "label": "Hispanic orig Males 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130006": {
+      "label": "Hispanic orig Males 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130007": {
+      "label": "Hispanic orig Males 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0220008": {
+      "label": "Rent-occ HUs Pers/Rm 1_01-1_50",
+      "concept": "Housing Subjects"
+    },
+    "P0130004": {
+      "label": "Hispanic orig Males 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0220009": {
+      "label": "Rent-occ HUs Pers/Rm 1_51-2_00",
+      "concept": "Housing Subjects"
+    },
+    "P0130005": {
+      "label": "Hispanic orig Males 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0250005": {
+      "label": "Spec Own-occ HUs Other race HHDR",
+      "concept": "Housing Subjects"
+    },
+    "P0130002": {
+      "label": "Hispanic orig Males 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130003": {
+      "label": "Hispanic orig Males 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130001": {
+      "label": "Hispanic orig Males '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "H0410005": {
+      "label": "HUs 5-9 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0220001": {
+      "label": "Own-occ HUs Pers/Rm 0_50 or less",
+      "concept": "Housing Subjects"
+    },
+    "COUSUBSC": {
+      "label": "County Subdivision Population Size Code",
+      "concept": "Geographic Traits"
+    },
+    "H0410006": {
+      "label": "HUs 10-19 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0220003": {
+      "label": "Own-occ HUs Pers/Rm 1_01-1_50",
+      "concept": "Housing Subjects"
+    },
+    "H0410003": {
+      "label": "HUs 2 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0220002": {
+      "label": "Own-occ HUs Pers/Rm 0_51-1_00",
+      "concept": "Housing Subjects"
+    },
+    "H0410004": {
+      "label": "HUs 3-4 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0410009": {
+      "label": "HUs Mobil home/trailer",
+      "concept": "Housing Subjects"
+    },
+    "H0250004": {
+      "label": "Spe Own-occ HUs Asian/Pcfc Isld HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0220005": {
+      "label": "Rent-occ HUs Pers/Rm 2_01+",
+      "concept": "Housing Subjects"
+    },
+    "H0250003": {
+      "label": "Spe Own-occ HUs Ame Ind/Esk/Ale HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0220004": {
+      "label": "Own-occ HUs Pers/Rm 1_51-2_00",
+      "concept": "Housing Subjects"
+    },
+    "P0110019": {
+      "label": "Persons Age 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0250002": {
+      "label": "Spec Own-occ HUs Black HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0220007": {
+      "label": "Rent-occ HUs Pers/Rm 0_51-1_00",
+      "concept": "Housing Subjects"
+    },
+    "H0410007": {
+      "label": "HUs 20-49 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0220006": {
+      "label": "Rent-occ HUs Pers/Rm 0_50 or less",
+      "concept": "Housing Subjects"
+    },
+    "H0410008": {
+      "label": "HUs 50+ unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0250001": {
+      "label": "Spec Own-occ HUs White HHDR",
+      "concept": "Housing Subjects"
+    },
+    "P0110016": {
+      "label": "Persons Age 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110015": {
+      "label": "Persons Age 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110018": {
+      "label": "Persons Age 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110017": {
+      "label": "Persons Age 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110012": {
+      "label": "Persons Age 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0410001": {
+      "label": "HUs 1 detached unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "P0110011": {
+      "label": "Persons Age 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0410002": {
+      "label": "HUs 1 attached unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "P0110014": {
+      "label": "Persons Age 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110013": {
+      "label": "Persons Age 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110010": {
+      "label": "Persons Age 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130017": {
+      "label": "Hispanic orig Males 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130018": {
+      "label": "Hispanic orig Males 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130019": {
+      "label": "Hispanic orig Males 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130013": {
+      "label": "Hispanic orig Males 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130014": {
+      "label": "Hispanic orig Males 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130015": {
+      "label": "Hispanic orig Males 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130016": {
+      "label": "Hispanic orig Males 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130010": {
+      "label": "Hispanic orig Males 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130011": {
+      "label": "Hispanic orig Males 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0010001": {
+      "label": "Total Housing units",
+      "concept": "Housing Subjects"
+    },
+    "P0130012": {
+      "label": "Hispanic orig Males 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110009": {
+      "label": "Persons Age 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110008": {
+      "label": "Persons Age 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110007": {
+      "label": "Persons Age 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110006": {
+      "label": "Persons Age 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110005": {
+      "label": "Persons Age 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110004": {
+      "label": "Persons Age 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110003": {
+      "label": "Persons Age 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "AREALAND": {
+      "label": "Area (land)",
+      "concept": "Geographic Traits"
+    },
+    "P0110002": {
+      "label": "Persons Age 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110001": {
+      "label": "Persons Age '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "H0240001": {
+      "label": "Spec Own-occ HUs:Agg Value",
+      "concept": "Housing Subjects"
+    },
+    "P0130028": {
+      "label": "Hispanic orig Males 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130029": {
+      "label": "Hispanic orig Males 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130022": {
+      "label": "Hispanic orig Males 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130023": {
+      "label": "Hispanic orig Males 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130020": {
+      "label": "Hispanic orig Males 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130021": {
+      "label": "Hispanic orig Males 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130026": {
+      "label": "Hispanic orig Males 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130027": {
+      "label": "Hispanic orig Males 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130024": {
+      "label": "Hispanic orig Males 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130025": {
+      "label": "Hispanic orig Males 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130030": {
+      "label": "Hispanic orig Males 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130039": {
+      "label": "Hispanic orig Females 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110031": {
+      "label": "Persons Age 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110030": {
+      "label": "Persons Age 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130031": {
+      "label": "Hispanic orig Males 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130032": {
+      "label": "Hispanic orig Females '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "P0130033": {
+      "label": "Hispanic orig Females 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130034": {
+      "label": "Hispanic orig Females 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130035": {
+      "label": "Hispanic orig Females 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130036": {
+      "label": "Hispanic orig Females 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130037": {
+      "label": "Hispanic orig Females 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130038": {
+      "label": "Hispanic orig Females 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130041": {
+      "label": "Hispanic orig Females 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130040": {
+      "label": "Hispanic orig Females 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110025": {
+      "label": "Persons Age 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110024": {
+      "label": "Persons Age 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110023": {
+      "label": "Persons Age 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110022": {
+      "label": "Persons Age 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110029": {
+      "label": "Persons Age 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110028": {
+      "label": "Persons Age 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110027": {
+      "label": "Persons Age 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0110026": {
+      "label": "Persons Age 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130049": {
+      "label": "Hispanic orig Females 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "CHARITER": {
+      "label": "Characteristic Iteration",
+      "concept": "Geographic Traits"
+    },
+    "P0130048": {
+      "label": "Hispanic orig Females 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "PARTFLAG": {
+      "label": "Part Flag",
+      "concept": "Geographic Traits"
+    },
+    "P0130047": {
+      "label": "Hispanic orig Females 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130046": {
+      "label": "Hispanic orig Females 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130045": {
+      "label": "Hispanic orig Females 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130044": {
+      "label": "Hispanic orig Females 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130043": {
+      "label": "Hispanic orig Females 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130042": {
+      "label": "Hispanic orig Females 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "SPFLAG": {
+      "label": "Special Flag",
+      "concept": "Geographic Traits"
+    },
+    "P0130051": {
+      "label": "Hispanic orig Females 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130052": {
+      "label": "Hispanic orig Females 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130050": {
+      "label": "Hispanic orig Females 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130058": {
+      "label": "Hispanic orig Females 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130057": {
+      "label": "Hispanic orig Females 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130059": {
+      "label": "Hispanic orig Females 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130054": {
+      "label": "Hispanic orig Females 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130053": {
+      "label": "Hispanic orig Females 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130056": {
+      "label": "Hispanic orig Females 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130055": {
+      "label": "Hispanic orig Females 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0320001": {
+      "label": "Imputation Sex Alloc",
+      "concept": "Population Subjects"
+    },
+    "P0320002": {
+      "label": "Imputation Sex Nt alloc",
+      "concept": "Population Subjects"
+    },
+    "P0130060": {
+      "label": "Hispanic orig Females 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130061": {
+      "label": "Hispanic orig Females 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0130062": {
+      "label": "Hispanic orig Females 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "H0050003": {
+      "label": "HU Vcncy Sts Rnted or sld, not occpied",
+      "concept": "Housing Subjects"
+    },
+    "H0050004": {
+      "label": "HU Vcncy Sts Season/recreat/occsnl use",
+      "concept": "Housing Subjects"
+    },
+    "H0050005": {
+      "label": "HU Vcncy Status For migrant workers",
+      "concept": "Housing Subjects"
+    },
+    "H0050006": {
+      "label": "HU Vacancy Status Other vacant",
+      "concept": "Housing Subjects"
+    },
+    "REG": {
+      "label": "Region",
+      "concept": "Geographic Traits"
+    },
+    "H0050002": {
+      "label": "HU Vacancy Status For sale only",
+      "concept": "Housing Subjects"
+    },
+    "H0050001": {
+      "label": "HU Vacancy Status For rent",
+      "concept": "Housing Subjects"
+    },
+    "P0060001": {
+      "label": "Race(5) White",
+      "concept": "Population Subjects"
+    },
+    "P0060004": {
+      "label": "Race(5) Asian/Pacific Isldr",
+      "concept": "Population Subjects"
+    },
+    "P0060005": {
+      "label": "Race(5) Other race",
+      "concept": "Population Subjects"
+    },
+    "P0060002": {
+      "label": "Race(5) Black",
+      "concept": "Population Subjects"
+    },
+    "P0060003": {
+      "label": "Race(5) Amer Ind/Esk/Aleut",
+      "concept": "Population Subjects"
+    },
+    "P0350002": {
+      "label": "Imputation Hisp Orig Nt alloc",
+      "concept": "Population Subjects"
+    },
+    "P0350001": {
+      "label": "Imputation Hisp Orig Alloc",
+      "concept": "Population Subjects"
+    },
+    "P0030001": {
+      "label": "Total Households",
+      "concept": "Population Subjects"
+    },
+    "P0120029": {
+      "label": "White Males 75-79 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0540004": {
+      "label": "Imputation Rent No cash rent",
+      "concept": "Housing Subjects"
+    },
+    "P0120025": {
+      "label": "White Males 60-61 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120026": {
+      "label": "White Males 62-64 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0540003": {
+      "label": "Imputation Rent Nt subst Nt Alloc",
+      "concept": "Housing Subjects"
+    },
+    "P0120027": {
+      "label": "White Males 65-69 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0540002": {
+      "label": "Imputation Rent Nt subst Alloc",
+      "concept": "Housing Subjects"
+    },
+    "H0540001": {
+      "label": "Imputation Rent Subst",
+      "concept": "Housing Subjects"
+    },
+    "P0120028": {
+      "label": "White Males 70-74 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120021": {
+      "label": "White Males 40-44 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120022": {
+      "label": "White Males 45-49 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120023": {
+      "label": "White Males 50-54 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120024": {
+      "label": "White Males 55-59 yrs",
+      "concept": "Population Subjects"
+    },
+    "POP100": {
+      "label": "Population Count (100%)",
+      "concept": "Geographic Traits"
+    },
+    "P0120031": {
+      "label": "White Males 85+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120030": {
+      "label": "White Males 80-84 yrs",
+      "concept": "Population Subjects"
+    },
+    "DIVIS": {
+      "label": "Division",
+      "concept": "Geographic Traits"
+    },
+    "H0120014": {
+      "label": "Rent-occ HU HHDR 75 yrs '&' over",
+      "concept": "Housing Subjects"
+    },
+    "H0120010": {
+      "label": "Rent-occ HU HHDR 35-44 yrs",
+      "concept": "Housing Subjects"
+    },
+    "H0120011": {
+      "label": "Rent-occ HU HHDR 45-54 yrs",
+      "concept": "Housing Subjects"
+    },
+    "H0120012": {
+      "label": "Rent-occ HU HHDR 55-64 yrs",
+      "concept": "Housing Subjects"
+    },
+    "H0120013": {
+      "label": "Rent-occ HU HHDR 65-74 yrs",
+      "concept": "Housing Subjects"
+    },
+    "H0120009": {
+      "label": "Rent-occ HU HHDR 25-34 yrs",
+      "concept": "Housing Subjects"
+    },
+    "H0120008": {
+      "label": "Rent-occ HU HHDR 15-24 yrs",
+      "concept": "Housing Subjects"
+    },
+    "H0120007": {
+      "label": "Own-occ HU HHDR 75 yrs '&' over",
+      "concept": "Housing Subjects"
+    },
+    "P0120038": {
+      "label": "White Females 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120039": {
+      "label": "White Females 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120036": {
+      "label": "White Females 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120037": {
+      "label": "White Females 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120034": {
+      "label": "White Females 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120035": {
+      "label": "White Females 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120032": {
+      "label": "White Females '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "P0120033": {
+      "label": "White Females 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120042": {
+      "label": "White Females 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120041": {
+      "label": "White Females 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0330001": {
+      "label": "Agg Rent:Spec Rent-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "P0120040": {
+      "label": "White Females 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0120005": {
+      "label": "Own-occ HU HHDR 55-64 yrs",
+      "concept": "Housing Subjects"
+    },
+    "H0120006": {
+      "label": "Own-occ HU HHDR 65-74 yrs",
+      "concept": "Housing Subjects"
+    },
+    "H0120003": {
+      "label": "Own-occ HU HHDR 35-44 yrs",
+      "concept": "Housing Subjects"
+    },
+    "H0120004": {
+      "label": "Own-occ HU HHDR 45-54 yrs",
+      "concept": "Housing Subjects"
+    },
+    "H0120001": {
+      "label": "Own-occ HU HHDR 15-24 yrs",
+      "concept": "Housing Subjects"
+    },
+    "H0120002": {
+      "label": "Own-occ HU HHDR 25-34 yrs",
+      "concept": "Housing Subjects"
+    },
+    "P0120007": {
+      "label": "White Males 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120008": {
+      "label": "White Males 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120009": {
+      "label": "White Males 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120001": {
+      "label": "White Males '<' 1 yr",
+      "concept": "Population Subjects"
+    },
+    "P0120002": {
+      "label": "White Males 1-2 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120003": {
+      "label": "White Males 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120004": {
+      "label": "White Males 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120005": {
+      "label": "White Males 6 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120006": {
+      "label": "White Males 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0290002": {
+      "label": "Pers Subst for Noninterview",
+      "concept": "Population Subjects"
+    },
+    "P0290001": {
+      "label": "Pers Not subst",
+      "concept": "Population Subjects"
+    },
+    "P0120018": {
+      "label": "White Males 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120019": {
+      "label": "White Males 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120012": {
+      "label": "White Males 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120013": {
+      "label": "White Males 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120010": {
+      "label": "White Males 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "ARTLI": {
+      "label": "American Indian Reservation Trust Land Indicator Code",
+      "concept": "Geographic Traits"
+    },
+    "P0120011": {
+      "label": "White Males 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120016": {
+      "label": "White Males 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120017": {
+      "label": "White Males 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120014": {
+      "label": "White Males 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120015": {
+      "label": "White Males 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120020": {
+      "label": "White Males 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220034": {
+      "label": "Others in grp qrtrs 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220033": {
+      "label": "Others in grp qrtrs 6-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220036": {
+      "label": "Others in grp qrtrs 15-17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220035": {
+      "label": "Others in grp qrtrs 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220032": {
+      "label": "Others in grp qrtrs 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220031": {
+      "label": "Others in grp qrtrs 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220030": {
+      "label": "Others in grp qrtrs '<' 3 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220028": {
+      "label": "Institutionalized persons 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220029": {
+      "label": "Institutionalized persons 15-17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220026": {
+      "label": "Institutionalized persons 6-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220027": {
+      "label": "Institutionalized persons 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220024": {
+      "label": "Institutionalized persons 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220025": {
+      "label": "Institutionalized persons 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220022": {
+      "label": "Nonrelatives 15-17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220023": {
+      "label": "Institutionalized persons '<' 3 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0250003": {
+      "label": "2+ pers Nonfam HHs 1+ pers 65+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0250004": {
+      "label": "1 pers HHs no pers 65+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0250001": {
+      "label": "1 pers HHs 1+ pers 65+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0250002": {
+      "label": "2+ pers Family HHs 1+ pers 65+ yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220021": {
+      "label": "Nonrelatives 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220020": {
+      "label": "Nonrelatives 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220015": {
+      "label": "Other relatives 15-17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220016": {
+      "label": "Nonrelatives '<' 3 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220017": {
+      "label": "Nonrelatives 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220018": {
+      "label": "Nonrelatives 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220011": {
+      "label": "Other relatives 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220012": {
+      "label": "Other relatives 6-ll yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220013": {
+      "label": "Other relatives 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220014": {
+      "label": "Other relatives 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220019": {
+      "label": "Nonrelatives 6-ll yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120285": {
+      "label": "Other Race Females 7-9 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120286": {
+      "label": "Other Race Females 10-11 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120287": {
+      "label": "Other Race Females 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120288": {
+      "label": "Other Race Females 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120289": {
+      "label": "Other Race Females 15 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220010": {
+      "label": "Other relatives 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220002": {
+      "label": "Own child '<' 3 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220003": {
+      "label": "Own child 3-4 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120291": {
+      "label": "Other Race Females 17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220001": {
+      "label": "Householder or spouse '<' 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120290": {
+      "label": "Other Race Females 16 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220006": {
+      "label": "Own child 12-13 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120293": {
+      "label": "Other Race Females 19 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120292": {
+      "label": "Other Race Females 18 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220007": {
+      "label": "Own child 14 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220004": {
+      "label": "Own child 5 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120295": {
+      "label": "Other Race Females 21 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120294": {
+      "label": "Other Race Females 20 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220005": {
+      "label": "Own child 6-ll yrs",
+      "concept": "Population Subjects"
+    },
+    "UASC": {
+      "label": "Urbanized Area Population Size Code",
+      "concept": "Geographic Traits"
+    },
+    "P0220008": {
+      "label": "Own child 15-17 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0220009": {
+      "label": "Other relatives '<' 3 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120298": {
+      "label": "Other Race Females 30-34 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120299": {
+      "label": "Other Race Females 35-39 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120296": {
+      "label": "Other Race Females 22-24 yrs",
+      "concept": "Population Subjects"
+    },
+    "P0120297": {
+      "label": "Other Race Females 25-29 yrs",
+      "concept": "Population Subjects"
+    },
+    "H0430006": {
+      "label": "Own-occ HUs 10-19 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0430005": {
+      "label": "Own-occ HUs 5-9 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0230001": {
+      "label": "Value '<' $15000 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0430008": {
+      "label": "Own-occ HUs 50+ unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0430007": {
+      "label": "Own-occ HUs 20-49 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0230002": {
+      "label": "Value $15000-19999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0230003": {
+      "label": "Value $20000-24999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0430002": {
+      "label": "Own-occ HUs 1 attached unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0430001": {
+      "label": "Own-occ HUs 1 detached unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0230004": {
+      "label": "Value $25000-29999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0230005": {
+      "label": "Value $30000-34999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0430004": {
+      "label": "Own-occ HUs 3-4 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0430003": {
+      "label": "Own-occ HUs 2 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0230006": {
+      "label": "Value $35000-39999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0440005": {
+      "label": "Agg Pers Own-occ 5-9 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440004": {
+      "label": "Agg Pers Own-occ 3-4 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440007": {
+      "label": "Agg Pers Own-occ 20-49 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440006": {
+      "label": "Agg Pers Own-occ 10-19 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440001": {
+      "label": "Agg Pers Own-occ 1 detached unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440003": {
+      "label": "Agg Pers Own-occ 2 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440002": {
+      "label": "Agg Pers Own-occ 1 attached unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440008": {
+      "label": "Agg Pers Own-occ 50+ unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440009": {
+      "label": "Agg Pers Own-occ Mobil home/trailer",
+      "concept": "Housing Subjects"
+    },
+    "H0230008": {
+      "label": "Value $45000-49999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0230007": {
+      "label": "Value $40000-44999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0230009": {
+      "label": "Value $50000-59999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0430009": {
+      "label": "Own-occ HUs Mobil home/trailer",
+      "concept": "Housing Subjects"
+    },
+    "H0230016": {
+      "label": "Vle $200000-249999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0230017": {
+      "label": "Vle $250000-299999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0230014": {
+      "label": "Vle $150000-174999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0230015": {
+      "label": "Vle $175000-199999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0280002": {
+      "label": "Spec Own-occ HUs Agg Value Hisp HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0230012": {
+      "label": "Vle $100000-124999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0230013": {
+      "label": "Vle $125000-149999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0230010": {
+      "label": "Value $60000-74999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0230011": {
+      "label": "Value $75000-99999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0080001": {
+      "label": "Occupied HU Race of HHDR White",
+      "concept": "Housing Subjects"
+    },
+    "H0080002": {
+      "label": "Occupied HU Race of HHDR Black",
+      "concept": "Housing Subjects"
+    },
+    "H0080003": {
+      "label": "Ocpd HU Rce of HHDR Amer Ind/Esk/Aleut",
+      "concept": "Housing Subjects"
+    },
+    "H0080004": {
+      "label": "Ocpd HU Rce of HHDR Asian/Pcfc Isldr",
+      "concept": "Housing Subjects"
+    },
+    "H0080005": {
+      "label": "Occupied HU Race of HHDR Other race",
+      "concept": "Housing Subjects"
+    },
+    "P0330001": {
+      "label": "Imputation Age Alloc",
+      "concept": "Population Subjects"
+    },
+    "P0330002": {
+      "label": "Imputation Age Nt alloc",
+      "concept": "Population Subjects"
+    },
+    "H0280001": {
+      "label": "Spe Own-occ HUs Ag Value Nt Hisp HHDR",
+      "concept": "Housing Subjects"
+    },
+    "H0230019": {
+      "label": "Vle $400000-499999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0230018": {
+      "label": "Vle $300000-399999 Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0230020": {
+      "label": "Value $500000+ Spec Own-occ HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0020002": {
+      "label": "HU Occupancy Status Vacant",
+      "concept": "Housing Subjects"
+    },
+    "H0190001": {
+      "label": "Agg Pers in occupied HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0020001": {
+      "label": "HU Occupancy Status Occupied",
+      "concept": "Housing Subjects"
+    },
+    "AREAWAT": {
+      "label": "Area (water)",
+      "concept": "Geographic Traits"
+    },
+    "H0150001": {
+      "label": "Total Own-occ HUs Agg Rms",
+      "concept": "Housing Subjects"
+    },
+    "H0150002": {
+      "label": "Total Rent-occ HUs Agg Rms",
+      "concept": "Housing Subjects"
+    },
+    "H0440013": {
+      "label": "Agg Pers Rent-occ 2 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440014": {
+      "label": "Agg Pers Rent-occ 3-4 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440011": {
+      "label": "Ag Pers Rnt-occ 1 detached unit/strct",
+      "concept": "Housing Subjects"
+    },
+    "H0440012": {
+      "label": "Ag Pers Rnt-occ 1 attached unit/strct",
+      "concept": "Housing Subjects"
+    },
+    "H0440017": {
+      "label": "Agg Pers Rent-occ 20-49 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440018": {
+      "label": "Agg Pers Rent-occ 50+ unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440015": {
+      "label": "Agg Pers Rent-occ 5-9 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0440016": {
+      "label": "Agg Pers Rent-occ 10-19 unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "PSADC": {
+      "label": "Political/Statistical Area Description Code",
+      "concept": "Geographic Traits"
+    },
+    "H0440010": {
+      "label": "Agg Pers Own-occ Other unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "TRACTBNA": {
+      "label": "TRACT"
+    },
+    "H0440019": {
+      "label": "Agg Pers Rent-occ Mobil home/trailer",
+      "concept": "Housing Subjects"
+    },
+    "P0040003": {
+      "label": "Persons Rural",
+      "concept": "Population Subjects"
+    },
+    "H0470003": {
+      "label": "Imputation Vcncy Stats Nt sbst Nt Alloc",
+      "concept": "Housing Subjects"
+    },
+    "P0040002": {
+      "label": "Persons Urban Outside urbanized area",
+      "concept": "Population Subjects"
+    },
+    "H0470001": {
+      "label": "Imputation Vacancy Status Subst",
+      "concept": "Housing Subjects"
+    },
+    "P0040001": {
+      "label": "Persons Urban Inside urbanized area",
+      "concept": "Population Subjects"
+    },
+    "H0470002": {
+      "label": "Imputation Vcncy Status Nt subst Alloc",
+      "concept": "Housing Subjects"
+    },
+    "H0130009": {
+      "label": "HUs 9+ rooms",
+      "concept": "Housing Subjects"
+    },
+    "H0130008": {
+      "label": "HUs 8 rooms",
+      "concept": "Housing Subjects"
+    },
+    "H0130007": {
+      "label": "HUs 7 rooms",
+      "concept": "Housing Subjects"
+    },
+    "P0040004": {
+      "label": "Persons Urban-Rural Not defined for file",
+      "concept": "Population Subjects"
+    },
+    "H0130006": {
+      "label": "HUs 6 rooms",
+      "concept": "Housing Subjects"
+    },
+    "H0440020": {
+      "label": "Agg Pers Rent-occ Other unit/struct",
+      "concept": "Housing Subjects"
+    },
+    "H0310001": {
+      "label": "Ag Prce Ask:Spe vcnt-for-sle-only HUs",
+      "concept": "Housing Subjects"
+    },
+    "H0130001": {
+      "label": "HUs 1 room",
+      "concept": "Housing Subjects"
+    },
+    "H0130004": {
+      "label": "HUs 4 rooms",
+      "concept": "Housing Subjects"
+    },
+    "H0130005": {
+      "label": "HUs 5 rooms",
+      "concept": "Housing Subjects"
+    },
+    "H0130002": {
+      "label": "HUs 2 rooms",
+      "concept": "Housing Subjects"
+    },
+    "H0130003": {
+      "label": "HUs 3 rooms",
+      "concept": "Housing Subjects"
+    },
+    "P0360001": {
+      "label": "Imputation Marital Stat Pers 15+ Sbst",
+      "concept": "Population Subjects"
+    },
+    "P0360002": {
+      "label": "Imptn Mrtl Stat Pers 15+ Nt sbst Allc",
+      "concept": "Population Subjects"
+    },
+    "P0360003": {
+      "label": "Imptn Mrtl Stat Pers 15+ Nt sbst N al",
+      "concept": "Population Subjects"
+    }
+  }
+}

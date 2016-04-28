@@ -1,0 +1,70 @@
+{
+  "variables": {
+    "for": {
+      "label": "Census API FIPS 'for' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-for",
+      "predicateOnly": true
+    },
+    "in": {
+      "label": "Census API FIPS 'in' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-in",
+      "predicateOnly": true
+    },
+    "RCPTOT_F": {
+      "label": "Total receipts data suppression flag",
+      "concept": "Economic Statistics",
+      "predicateType": "string"
+    },
+    "RCPTOT": {
+      "label": "Total Receipts (in thousands of dollars)",
+      "concept": "Economic Statistics",
+      "predicateType": "int"
+    },
+    "ST": {
+      "label": "FIPS US code",
+      "concept": "Selectable Geographies"
+    },
+    "CTY": {
+      "label": "FIPS County code",
+      "concept": "Selectable Geographies"
+    },
+    "RCPTOT_SIZE": {
+      "label": "Value of business done ($1,000)",
+      "concept": "Economic Statistics",
+      "predicateType": "string"
+    },
+    "ESTAB_F": {
+      "label": "Number of establishments data suppression flag",
+      "concept": "Economic Statistics",
+      "predicateType": "string"
+    },
+    "RCPTOT_N_F": {
+      "label": "Total receipts noise flag",
+      "concept": "Economic Statistics",
+      "predicateType": "string"
+    },
+    "GEOTYPE": {
+      "label": "Geography type",
+      "concept": "Selectable Geographies",
+      "predicateType": "int"
+    },
+    "ESTAB": {
+      "label": "Total number of Establishments",
+      "concept": "Economic Statistics",
+      "predicateType": "int"
+    },
+    "LFO": {
+      "label": "Legal form of organization",
+      "concept": "Economic Statistics",
+      "predicateType": "string"
+    },
+    "NAICS2012": {
+      "label": "NAICS Industry Code",
+      "concept": "Economic Statistics",
+      "required": true,
+      "predicateType": "string"
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "variables": {
+    "for": {
+      "label": "Census API FIPS 'for' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-for",
+      "predicateOnly": true
+    },
+    "in": {
+      "label": "Census API FIPS 'in' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-in",
+      "predicateOnly": true
+    },
+    "PAYANN": {
+      "label": "Annual payroll ($1,000)",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "FOOTID_GEO": {
+      "label": "FootID of geography",
+      "concept": "Geographic Characteristics",
+      "predicateType": "string"
+    },
+    "GEOTYPE": {
+      "label": "Type of geography flag",
+      "concept": "Selectable Geographies"
+    },
+    "PLANREG": {
+      "label": "Puerto Rico planning area code",
+      "concept": "Geographic Characteristics",
+      "predicateType": "string"
+    },
+    "PAYQTR1": {
+      "label": "Total first quarter payroll",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "YEAR": {
+      "label": "Year",
+      "concept": "Employer Statistics",
+      "predicateType": "int"
+    },
+    "RCPTOT_S_F": {
+      "label": "Flag for Standard error for estimate of value of business done (%)",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "FOOTID_NAICS": {
+      "label": "FootID of NAICS",
+      "concept": "Industry classification",
+      "predicateType": "string"
+    },
+    "GEO_COMP": {
+      "label": "Geographic component code",
+      "concept": "Geographic Characteristics",
+      "predicateType": "string"
+    },
+    "PLACE": {
+      "label": "FIPS Place code",
+      "concept": "Selectable Geographies"
+    },
+    "CONSCITY": {
+      "label": "FIPS consolidated city code",
+      "concept": "Selectable Geographies"
+    },
+    "COUNTY": {
+      "label": "FIPS county code",
+      "concept": "Selectable Geographies"
+    },
+    "ST": {
+      "label": "FIPS State Code",
+      "concept": "Selectable Geographies"
+    },
+    "ESTAB_F": {
+      "label": "Flag for Number of establishments data suppression flag",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "PAYANN_S_F": {
+      "label": "Flag for Standard error for estimate of annual payroll (%)",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "CSA": {
+      "label": "Combined Statistical Area Code",
+      "concept": "Selectable Geographies"
+    },
+    "NRCPTOT": {
+      "label": "Nonemployer value of business done ($1,000)",
+      "concept": "Non Employer Statistics",
+      "predicateType": "string"
+    },
+    "MD": {
+      "label": "Metro Division Code",
+      "concept": "Selectable Geographies"
+    },
+    "RCPTOT": {
+      "label": "Value of business done ($1,000)",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "NESTAB_F": {
+      "label": "Flag for Number of nonemployer establishments data suppression flag",
+      "concept": "Non Employer Statistics",
+      "predicateType": "string"
+    },
+    "GEO_ID": {
+      "label": "ID of geography",
+      "concept": "Geographic Characteristics"
+    },
+    "NESTAB": {
+      "label": "Number of nonemployer establishments",
+      "concept": "Non Employer Statistics",
+      "predicateType": "string"
+    },
+    "EMP": {
+      "label": "Number of employees",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "ESTAB": {
+      "label": "Number of establishments",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "NAICS2012": {
+      "label": "NAICS2012 industry code",
+      "concept": "Industry classification",
+      "required": true,
+      "predicateType": "string"
+    },
+    "MSA": {
+      "label": "Metropolitan/Micropolitan Statistical Area",
+      "concept": "Selectable Geographies"
+    },
+    "NRCPTOT_F": {
+      "label": "Flag for Nonemployer value of business done ($1,000) Data Suppression Flag",
+      "concept": "Non Employer Statistics",
+      "predicateType": "string"
+    },
+    "NAICS2012_TTL": {
+      "label": "Title of NAICS2012",
+      "concept": "Industry classification"
+    },
+    "EMP_F": {
+      "label": "Flag for Number of employees data suppression flag",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "PAYQTR1_S_F": {
+      "label": "Flag for Standard error for estimate of first-quarter payroll (%)",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "RCPTOT_F": {
+      "label": "Flag for Value of business done data suppression flag",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "OPTAX": {
+      "label": "Type of operation or tax status code",
+      "concept": "Employer Statistics",
+      "required": true,
+      "predicateType": "string"
+    },
+    "PAYANN_S": {
+      "label": "Standard error for estimate of annual payroll (%)",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "PAYQTR1_S": {
+      "label": "Standard error for estimate of first-quarter payroll (%)",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "PAYQTR1_F": {
+      "label": "Flag for Total first quarter payroll data suppression flag",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "PAYANN_F": {
+      "label": "Flag for Annual payroll data suppression flag",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "EMP_S_F": {
+      "label": "Flag for Standard error for estimate of number of employees (%)",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "GEO_TTL": {
+      "label": "Title of geography",
+      "concept": "Geographic Characteristics"
+    },
+    "EMP_S": {
+      "label": "Standard error for estimate of number of employees (%)",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "RCPTOT_S": {
+      "label": "Standard error for estimate of value of business done (%)",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "CENREG": {
+      "label": "Census region code",
+      "concept": "Geographic Characteristics"
+    }
+  }
+}

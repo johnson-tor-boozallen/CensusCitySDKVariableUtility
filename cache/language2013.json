@@ -1,0 +1,107 @@
+{
+  "variables": {
+    "for": {
+      "label": "Census API FIPS 'for' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-for",
+      "predicateOnly": true
+    },
+    "in": {
+      "label": "Census API FIPS 'in' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-in",
+      "predicateOnly": true
+    },
+    "US": {
+      "label": "FIPS US code",
+      "concept": "Geographic Characteristics"
+    },
+    "LVWELL": {
+      "label": "Number of people who speak the language and speak English less than 'very well'",
+      "concept": "Language Estimates",
+      "predicateType": "int"
+    },
+    "NAME": {
+      "label": "Geography Name",
+      "concept": "Geographic Characteristics",
+      "predicateType": "int"
+    },
+    "CBSA": {
+      "label": "FIPS Metropolitan and Micropolitan Statistical Area",
+      "concept": "Language Categories"
+    },
+    "MOE_LVWELL": {
+      "label": "Margin of errror for the number of people who speak the language and speak English less than 'very well'",
+      "concept": "Language Estimates",
+      "predicateType": "int"
+    },
+    "LVWELL_FLAG": {
+      "label": "Flag for the number of people who speak the language and speak English less than 'very well'",
+      "concept": "Language Estimates",
+      "predicateType": "int"
+    },
+    "SUMLEV": {
+      "label": "Summary Level",
+      "concept": "Geographic Characteristics",
+      "predicateType": "int"
+    },
+    "LAN7": {
+      "label": "Language families in 7 major categories",
+      "concept": "Language Categories",
+      "predicateType": "int"
+    },
+    "MOE_EST_FLAG": {
+      "label": "Flag for the margin of error for the total number of people who speak the language",
+      "concept": "Language Estimates",
+      "predicateType": "int"
+    },
+    "EST_FLAG": {
+      "label": "Flag for the total number of people who speak the language",
+      "concept": "Language Estimates",
+      "predicateType": "int"
+    },
+    "ST": {
+      "label": "FIPS state code",
+      "concept": "Geographic Characteristics"
+    },
+    "CTY": {
+      "label": "FIPS county code",
+      "concept": "Geographic Characteristics"
+    },
+    "LAN": {
+      "label": "Detailed language",
+      "concept": "Language Categories",
+      "predicateType": "int"
+    },
+    "MOE_EST": {
+      "label": "Margin of errror for the total number of people who speak the language",
+      "concept": "Language Estimates",
+      "predicateType": "int"
+    },
+    "GEOID": {
+      "label": "Geographic Identifier",
+      "concept": "Geographic Characteristics",
+      "predicateType": "int"
+    },
+    "LAN39": {
+      "label": "Language families in 39 major categories",
+      "concept": "Language Categories",
+      "predicateType": "int"
+    },
+    "EST": {
+      "label": "Total number of people who speak the language",
+      "concept": "Language Estimates",
+      "predicateType": "int"
+    },
+    "MOE_LVWELL_FLAG": {
+      "label": "Flag for the margin of error for the number of people who speak the language and speak English less than 'very well'",
+      "concept": "Language Estimates",
+      "predicateType": "int"
+    },
+    "LANLABEL": {
+      "label": "Language category label",
+      "concept": "Language Estimates",
+      "predicateType": "int"
+    }
+  }
+}

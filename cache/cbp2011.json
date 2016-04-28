@@ -1,0 +1,159 @@
+{
+  "variables": {
+    "for": {
+      "label": "Census API FIPS 'for' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-for",
+      "predicateOnly": true
+    },
+    "in": {
+      "label": "Census API FIPS 'in' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-in",
+      "predicateOnly": true
+    },
+    "NAICS2007": {
+      "label": "NAICS Industry Code",
+      "concept": "Industry classification",
+      "predicateType": "string"
+    },
+    "FOOTID_GEO": {
+      "label": "FootID of Geography",
+      "concept": "Geographic Characteristics",
+      "predicateType": "int"
+    },
+    "PAYANN": {
+      "label": "Total Annual Payroll",
+      "concept": "Employer Statistics",
+      "predicateType": "int"
+    },
+    "GEOTYPE": {
+      "label": "Geography type",
+      "concept": "Selectable Geographies"
+    },
+    "YEAR": {
+      "label": "Year",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "PAYQTR1": {
+      "label": "Total First Quarter Payroll",
+      "concept": "Employer Statistics",
+      "predicateType": "int"
+    },
+    "FOOTID_NAICS": {
+      "label": "FootID of NAICS code",
+      "concept": "Industry classification",
+      "predicateType": "int"
+    },
+    "EMP_N_F": {
+      "label": "Flag for Noise field for Total Mid-March Employees",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "COUNTY": {
+      "label": "FIPS County Code",
+      "concept": "Selectable Geographies"
+    },
+    "ST": {
+      "label": "FIPS US code",
+      "concept": "Selectable Geographies"
+    },
+    "EMPSZES": {
+      "label": "Employment size of establishment",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "CSA": {
+      "label": "Combined Statistical Area",
+      "concept": "Geographic Characteristics",
+      "predicateType": "int"
+    },
+    "ESTAB_F": {
+      "label": "Flag for Total number of Establishments",
+      "concept": "Employer Statistics",
+      "predicateType": "int"
+    },
+    "MD": {
+      "label": "Metro Division",
+      "concept": "Geographic Characteristics",
+      "predicateType": "int"
+    },
+    "GEO_ID": {
+      "label": "ID of Geography",
+      "concept": "Geographic Characteristics"
+    },
+    "EMP": {
+      "label": "Total Number of Employees",
+      "concept": "Employer Statistics",
+      "predicateType": "int"
+    },
+    "MSA": {
+      "label": "Metropolitan/Micropolitan Statistical Area Code",
+      "concept": "Selectable Geographies"
+    },
+    "LFO": {
+      "label": "Legal form of organization",
+      "concept": "Employer Statistics",
+      "predicateType": "int"
+    },
+    "ESTAB": {
+      "label": "Total number of Establishments",
+      "concept": "Employer Statistics",
+      "predicateType": "int"
+    },
+    "PAYANN_N_F": {
+      "label": "Flag for Noise field for Total Annual Payroll",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "EMP_F": {
+      "label": "Flag for Number of employees",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "PAYQTR1_N": {
+      "label": "Noise flag for Total First Quarter Payroll Data",
+      "concept": "Employer Statistics",
+      "predicateType": "int"
+    },
+    "PAYANN_N": {
+      "label": "Noise flag for Total Annual Payroll",
+      "concept": "Employer Statistics",
+      "predicateType": "int"
+    },
+    "PAYQTR1_N_F": {
+      "label": "Flag for Noise field for Total First Quarter Payroll",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "EMP_N": {
+      "label": "Noise flag for Total Mid-March Employees",
+      "concept": "Employer Statistics",
+      "predicateType": "int"
+    },
+    "PAYQTR1_F": {
+      "label": "Flag for Total First Quarter Payroll",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "PAYANN_F": {
+      "label": "Flag for Total Annual Payroll",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "LFO_TTL": {
+      "label": "Title of legal form of organization",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "GEO_TTL": {
+      "label": "Title of Geography",
+      "concept": "Geographic Characteristics"
+    },
+    "NAICS2007_TTL": {
+      "label": "Title of NAICS code",
+      "concept": "Industry classification"
+    }
+  }
+}

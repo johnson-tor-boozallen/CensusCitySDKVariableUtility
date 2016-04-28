@@ -1,0 +1,143 @@
+{
+  "variables": {
+    "for": {
+      "label": "Census API FIPS 'for' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-for",
+      "predicateOnly": true
+    },
+    "in": {
+      "label": "Census API FIPS 'in' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-in",
+      "predicateOnly": true
+    },
+    "PAYANN": {
+      "label": "Annual payroll ($1,000)",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "GEOTYPE": {
+      "label": "Type of geography flag",
+      "concept": "Selectable Geographies"
+    },
+    "SECTOR": {
+      "label": "NAICS economic sector code",
+      "concept": "Economic Statistics",
+      "predicateType": "int"
+    },
+    "YEAR": {
+      "label": "Year",
+      "concept": "Employer Statistics",
+      "predicateType": "int"
+    },
+    "NAICS2002": {
+      "label": "2002 NAICS code",
+      "concept": "All sectors",
+      "required": true,
+      "predicateType": "string"
+    },
+    "PLACE": {
+      "label": "FIPS PLACE code",
+      "concept": "Selectable Geographies"
+    },
+    "CONSCITY": {
+      "label": "FIPS CONSCITY code",
+      "concept": "Selectable Geographies"
+    },
+    "COUNTY": {
+      "label": "FIPS county code",
+      "concept": "Selectable Geographies"
+    },
+    "ST": {
+      "label": "Total for US",
+      "concept": "Selectable Geographies"
+    },
+    "CSA": {
+      "label": "FIPS CSA code",
+      "concept": "Selectable Geographies"
+    },
+    "ESTAB_F": {
+      "label": "Flag for Number of establishments data suppression flag",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "NRCPTOT": {
+      "label": "Nonemployer value of business done ($1,000)",
+      "concept": "Non Employer Statistics",
+      "predicateType": "string"
+    },
+    "MD": {
+      "label": "Metro Division Code",
+      "concept": "Selectable Geographies",
+      "predicateType": "string"
+    },
+    "NESTAB_F": {
+      "label": "Flag for Number of nonemployer establishments data suppression flag",
+      "concept": "Non Employer Statistics",
+      "predicateType": "string"
+    },
+    "RCPTOT": {
+      "label": "Value of business done ($1,000)",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "GEO_ID": {
+      "label": "ID of geography",
+      "concept": "Geographic Characteristics"
+    },
+    "NESTAB": {
+      "label": "Number of nonemployer establishments",
+      "concept": "Non Employer Statistics",
+      "predicateType": "string"
+    },
+    "EMP": {
+      "label": "Number of employees",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "MSA": {
+      "label": "FIPS Metropolitan Area",
+      "concept": "Selectable Geographies"
+    },
+    "ESTAB": {
+      "label": "Number of establishments",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "NRCPTOT_F": {
+      "label": "Flag for Nonemployer value of business done ($1,000) Data Suppression Flag",
+      "concept": "Non Employer Statistics",
+      "predicateType": "string"
+    },
+    "EMP_F": {
+      "label": "Flag for Number of employees data suppression flag",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "RCPTOT_F": {
+      "label": "Flag for Value of business done data suppression flag",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "OPTAX": {
+      "label": "Type of operation or tax status code",
+      "concept": "Employer Statistics",
+      "required": true,
+      "predicateType": "string"
+    },
+    "NAICSDES": {
+      "label": "description of naics value",
+      "concept": "Descriptions"
+    },
+    "PAYANN_F": {
+      "label": "Flag for Annual payroll data suppression flag",
+      "concept": "Employer Statistics",
+      "predicateType": "string"
+    },
+    "CENREG": {
+      "label": "Census region code",
+      "concept": "Geographic Characteristics"
+    }
+  }
+}

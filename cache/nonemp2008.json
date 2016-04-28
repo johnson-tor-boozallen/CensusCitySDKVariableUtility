@@ -1,0 +1,82 @@
+{
+  "variables": {
+    "for": {
+      "label": "Census API FIPS 'for' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-for",
+      "predicateOnly": true
+    },
+    "in": {
+      "label": "Census API FIPS 'in' clause",
+      "concept": "Census API Geography Specification",
+      "predicateType": "fips-in",
+      "predicateOnly": true
+    },
+    "NESTAB_F": {
+      "label": "Flag for Number of establishments",
+      "concept": "NonEmployer Statistics",
+      "predicateType": "string"
+    },
+    "NAICS2007": {
+      "label": "NAICS Industry Code",
+      "concept": "Industry classification",
+      "predicateType": "string"
+    },
+    "GEOTYPE": {
+      "label": "Geography Type",
+      "concept": "Selectable Geographies",
+      "predicateType": "string"
+    },
+    "NESTAB": {
+      "label": "Total number of Establishments",
+      "concept": "NonEmployer Statistics",
+      "predicateType": "int"
+    },
+    "MSA": {
+      "label": "FIPS Metropolitan Statistical Area code",
+      "concept": "Selectable Geographies"
+    },
+    "LFO": {
+      "label": "Legal form of organization",
+      "concept": "NonEmployer Statistics",
+      "predicateType": "string"
+    },
+    "NRCPTOT_F": {
+      "label": "Flag for Total receipts",
+      "concept": "NonEmployer Statistics",
+      "predicateType": "string"
+    },
+    "COUNTY": {
+      "label": "FIPS County code",
+      "concept": "Selectable Geographies"
+    },
+    "ST": {
+      "label": "FIPS State code",
+      "concept": "Selectable Geographies"
+    },
+    "NRCPTOT_N": {
+      "label": "Total Receipts with Noise",
+      "concept": "NonEmployer Statistics",
+      "predicateType": "int"
+    },
+    "RCPSZES": {
+      "label": "Value of business done ($1,000)",
+      "concept": "NonEmployer Statistics",
+      "predicateType": "string"
+    },
+    "NRCPTOT": {
+      "label": "Total Receipts (in thousands of dollars)",
+      "concept": "NonEmployer Statistics",
+      "predicateType": "int"
+    },
+    "GEO_TTL": {
+      "label": "Title of geography",
+      "concept": "Geographic Characteristics"
+    },
+    "NRCPTOT_N_F": {
+      "label": "Noise Flag for Total Receipts",
+      "concept": "NonEmployer Statistics",
+      "predicateType": "string"
+    }
+  }
+}
